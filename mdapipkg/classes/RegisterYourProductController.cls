@@ -20,6 +20,7 @@
  *   * Ajit Surana    09-Dec-2019    Changes for fixing the invalid Purchase Date and DOB issue (related to COMMEXC-2232)
  *   * Ajit Surana    07-Jan-2020    Added capitalize() method in registerProduct() method (related to SCTASK0022983 in SNow)
  *   * Ajit Surana    17-Jan-2020    Modified getResmedDevices() and showMaskNameMethod() to add ORDER BY clause (related to INC0017603 in SNow)
+ *   * Ajit Surana    29-Jan-2020    Replaced maskPromotionalCode value by devicePromotionalCode value as per COMMEXC-2429
  **********************************************************************************************/
 public without sharing class RegisterYourProductController {
     public String title { get; set; }
@@ -119,7 +120,7 @@ public without sharing class RegisterYourProductController {
         isDateOfBirthError = false;
         isExtendedWarranyCodeError = false;
         isPurchaseDateError = false;
-    displayConSecFlag = false;
+        displayConSecFlag = false;
         isExistingUser = false;
         isNewUser = false;
         showFormString='display:none;';
@@ -432,11 +433,11 @@ public without sharing class RegisterYourProductController {
                         System.debug('@@@@ dateStrInstance DOB >>> ->' + dateStrInstance);
                         
                         Date inputDate = dateStrInstance;
-                        
+                  
                         if(memberAccounts != null && memberAccounts.size() > 0){
                     
                             for(Account acct : memberAccounts){
-                            
+
                             if(acct.RecordTypeId == Schema.SObjectType.Account.getRecordTypeInfosByName().get('Member').getRecordTypeId()
                               && ((acct.PersonBirthdate_SPE__c == null) || (inputDate == acct.PersonBirthdate_SPE__c))){
                                 memberAccount = acct;
@@ -630,8 +631,8 @@ public without sharing class RegisterYourProductController {
                     } else {
                         deviceProductRegistration.Purchased_From__c = devicePurchasedFrom;
                     }
-          System.debug('@@@@ devicePromotionalCode >>> ->' + devicePromotionalCode);
-                    
+                    System.debug('@@@@ devicePromotionalCode >>> ->' + devicePromotionalCode);
+
                     deviceProductRegistration.Promotional_code__c = devicePromotionalCode;
                     deviceProductRegistration.Extended_Warranty_Code__c = extendedWarrantySecurityCode;
                     deviceProductRegistration.AccountId = acc.Id;
@@ -1009,8 +1010,7 @@ public without sharing class RegisterYourProductController {
             maskNameOptions.add(new SelectOption('','Select'));
             Set<String> uniqueMaskNames = new Set<String>();
             
-            for (list<SV_DeviceMask__c> lstProducts :[SELECT Id, Mask_Name__c FROM SV_DeviceMask__c Where Is_Web_Enabled__c = true AND Device_Name__c=: selDeviceName
-                                                      ORDER BY Sort_Index__c ASC])
+            for (list<SV_DeviceMask__c> lstProducts :[SELECT Id, Mask_Name__c FROM SV_DeviceMask__c Where Is_Web_Enabled__c = true AND Device_Name__c=: selDeviceName ORDER BY Sort_Index__c ASC])
             {
                 for (SV_DeviceMask__c prod : lstProducts)
                 {

@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
+        <fullName>Case_Status_For_Duplicate_Cases</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case_Status_For_Duplicate_Cases</shortDescription>
+        <value>Auto Closed by System Admin</value>
+    </labels>
+    <labels>
+        <fullName>Chin_Strap</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Chin Strap</shortDescription>
+        <value>Please select a Chin Strap value.</value>
+    </labels>
+    <labels>
         <fullName>Competitor_Mask</fullName>
         <categories>sleepVantage</categories>
         <language>en_US</language>
@@ -9,11 +24,705 @@
         <value>Other\-Competitor\-Masks \(MASKS\)\-Unknown\-\-TBC\-0184</value>
     </labels>
     <labels>
+        <fullName>Contact_Title</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact Title</shortDescription>
+        <value>Your Contact Details</value>
+    </labels>
+    <labels>
+        <fullName>CorePlus_Location_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CorePlus_Location_Id</shortDescription>
+        <value>28bc49ed-7398-4541-acb7-ca43dd014f22</value>
+    </labels>
+    <labels>
+        <fullName>Coummunity_URL</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Coummunity_URL</shortDescription>
+        <value>https://sleeptrial-resmed.cs57.force.com/customers/s/login/</value>
+    </labels>
+    <labels>
+        <fullName>Diagnosis_After_DOB_Check</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Diagnosis_After_DOB_Check</shortDescription>
+        <value>Month/Year of &quot;Diagnosis&quot; must be same or after Month/Year of &quot;Date Of Birth&quot;</value>
+    </labels>
+    <labels>
+        <fullName>EmailExistMessage</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailExistMessage</shortDescription>
+        <value>Email already exists! Please use your user name and password to Sign-In.</value>
+    </labels>
+    <labels>
+        <fullName>Footer_Text</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Footer Text</shortDescription>
+        <value>Contact Details&lt;br/&gt;
+    Office Hours: Monday to Friday&lt;br/&gt;
+    (Australia) Ph: &lt;a href=&quot;tel:02 8884 2620,,8&quot;&gt;02 8884 2620&lt;/a&gt;&lt;br/&gt;
+    Email: &lt;a href=&quot;mailto:registry@resmed.com.au?subject=ResMed Trials Registry Inquiry&quot;&gt;registry@resmed.com.au&lt;/a&gt;&lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Future_Month_Year_D</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Future_Month_Year_D</shortDescription>
+        <value>Month and year entered for diagnosis is in the future, please update</value>
+    </labels>
+    <labels>
+        <fullName>Future_Month_Year_Treatment</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Future_Month_Year_Treatment</shortDescription>
+        <value>Month and year entered for treatment is in the future, please update</value>
+    </labels>
+    <labels>
+        <fullName>Humidifier_List</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Humidifier List</shortDescription>
+        <value>Humidifier entry is missing.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Other_TextValue</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label_Other_TextValue</shortDescription>
+        <value>Other</value>
+    </labels>
+    <labels>
+        <fullName>Label_Unsure_TextValue</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label_Unsure_TextValue</shortDescription>
+        <value>Unsure</value>
+    </labels>
+    <labels>
+        <fullName>MA_Account_OwnerID</fullName>
+        <categories>MA Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MA_Account_OwnerID</shortDescription>
+        <value>0050l000003EFrp</value>
+    </labels>
+    <labels>
+        <fullName>MA_Asset_Record_Type_Name</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MA_Asset_Record_Type_Name</shortDescription>
+        <value>MA_Asset</value>
+    </labels>
+    <labels>
+        <fullName>MA_Community_Forgot_Password_Screen_Title</fullName>
+        <categories>MA Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MA_Community_Forgot_Password_Screen_Title</shortDescription>
+        <value>Did you forget your password? Please enter your registered email address below.</value>
+    </labels>
+    <labels>
+        <fullName>MA_Community_Login_Screen_Title</fullName>
+        <categories>MA Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MA_Community_Login_Screen_Title</shortDescription>
+        <value>ResMed Trials Registry Login</value>
+    </labels>
+    <labels>
+        <fullName>MA_Community_Login_URL</fullName>
+        <categories>MA Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MA_Community_Login_URL</shortDescription>
+        <value>https://uat-resmed-anz-uat.cs58.force.com/customers/MA_CustomLoginPage</value>
+    </labels>
+    <labels>
+        <fullName>MA_Community_Password_Forget_Link</fullName>
+        <categories>MA Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MA_Community_Password_Forget_Link</shortDescription>
+        <value>https://uat-resmed-anz-uat.cs58.force.com/customers/MA_CustomForgotPasswordPage</value>
+    </labels>
+    <labels>
+        <fullName>MA_Community_Password_Reset_Screen_Title</fullName>
+        <categories>MA Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MA_Community_Password_Reset_Screen_Title</shortDescription>
+        <value>ResMed Trials Registry</value>
+    </labels>
+    <labels>
+        <fullName>MA_Forgot_Pwd_Confirm_Msg1</fullName>
+        <categories>MA Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MA_Forgot_Pwd_Confirm_Msg1</shortDescription>
+        <value>If your email is registered in our system, you will receive an email with instructions to reset your password.</value>
+    </labels>
+    <labels>
+        <fullName>MA_Registration_Form_URL</fullName>
+        <categories>MA Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MA_Registration_Form_URL</shortDescription>
+        <value>www.resmed.com/TrialsRegistry</value>
+    </labels>
+    <labels>
+        <fullName>Max_Name_Characters</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Max_Name_Characters</shortDescription>
+        <value>Max character Limit 80</value>
+    </labels>
+    <labels>
+        <fullName>Medical_Record_Type_Name</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical_Record_Type_Name</shortDescription>
+        <value>Medical Affairs</value>
+    </labels>
+    <labels>
+        <fullName>Member_Recordtype</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Member Recordtype</shortDescription>
+        <value>01290000000Q260</value>
+    </labels>
+    <labels>
+        <fullName>Min_Max_Pressure_Check</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Min_Max_Pressure_Check</shortDescription>
+        <value>Min pressure should be less than Max pressure</value>
+    </labels>
+    <labels>
+        <fullName>New_Machine_List</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Machine List</shortDescription>
+        <value>You have selected -Yes- to using a device for treatment, please enter a device under Machine section.</value>
+    </labels>
+    <labels>
+        <fullName>New_Mask_List</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Mask List</shortDescription>
+        <value>You have selected -Yes- to using a mask for treatment, please enter a mask under the Mask section.</value>
+    </labels>
+    <labels>
+        <fullName>Oracle_Workflow_PROD</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Oracle_Workflow_PROD</shortDescription>
+        <value>Oracle Workflow PROD</value>
+    </labels>
+    <labels>
+        <fullName>Phone_CountryCode</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Phone_CountryCode</shortDescription>
+        <value>+61</value>
+    </labels>
+    <labels>
+        <fullName>Primary_Machine_Required</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Primary_Machine_Required</shortDescription>
+        <value>Please indicate which machine you use as a primary product</value>
+    </labels>
+    <labels>
+        <fullName>Primary_Mask_Required</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Primary_Mask_Required</shortDescription>
+        <value>Please indicate which mask you use as a primary product</value>
+    </labels>
+    <labels>
+        <fullName>RMD_DoNotDefaultTo_EmailList</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RMD_DoNotDefaultTo_EmailList</shortDescription>
+        <value>service@resmed.com.au;eduardo.delarosa@resmed.com.au;ajit.kumarsurana@resmed.com.au</value>
+    </labels>
+    <labels>
         <fullName>RMD_Enable_Email_Notification</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>RMD_Enable_Email_Notification</shortDescription>
         <value>Y</value>
+    </labels>
+    <labels>
+        <fullName>Required_Age_Check</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Age_Check</shortDescription>
+        <value>You need to be at least 18 years old to register</value>
+    </labels>
+    <labels>
+        <fullName>Required_Captcha</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Captcha</shortDescription>
+        <value>Please Complete Captcha!</value>
+    </labels>
+    <labels>
+        <fullName>Required_Confirmed_Email</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Confirmed_Email</shortDescription>
+        <value>Provide a valid Confirm Email Address.</value>
+    </labels>
+    <labels>
+        <fullName>Required_Email_Matched</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Email_Matched</shortDescription>
+        <value>Email and Confirmed should be match.</value>
+    </labels>
+    <labels>
+        <fullName>Required_Ethnicity</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Ethnicity</shortDescription>
+        <value>Select from the list of Ethnicity</value>
+    </labels>
+    <labels>
+        <fullName>Required_Humidifier_product_Name_Other</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required Humidifier product Name Other</shortDescription>
+        <value>Humidifier Product Name (Other) is Required</value>
+    </labels>
+    <labels>
+        <fullName>Required_Is_Using_Device_For_Treament</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Is_Using_Device_For_Treament</shortDescription>
+        <value>Please provide an answer whether you use a device</value>
+    </labels>
+    <labels>
+        <fullName>Required_Machine_mn_other</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Machine_mn_other</shortDescription>
+        <value>Specify the Manufacture (Other) for Machine.</value>
+    </labels>
+    <labels>
+        <fullName>Required_Mobile</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Mobile</shortDescription>
+        <value>Enter a valid Australian Mobile Number OR Home Number</value>
+    </labels>
+    <labels>
+        <fullName>Required_Mobile_2</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Mobile_2</shortDescription>
+        <value>Enter a valid 10-digit Australian Mobile Number</value>
+    </labels>
+    <labels>
+        <fullName>Required_Postcode</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Postcode</shortDescription>
+        <value>Enter a valid 4-digit Australian Postcode (e.g., 2153)</value>
+    </labels>
+    <labels>
+        <fullName>Required_Preferred_clinic_for_follow_up</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Preferred_clinic_for_follow_up</shortDescription>
+        <value>Select from the list of Preferred Clinic for Research Visits.</value>
+    </labels>
+    <labels>
+        <fullName>Required_Preferred_clinic_for_follow_up_Other</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required Preferred Clinic for follow up Other</shortDescription>
+        <value>Specify a value for (Other) Preferred Clinic for Research Visits</value>
+    </labels>
+    <labels>
+        <fullName>Required_Primary_Machine</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Primary_Machine</shortDescription>
+        <value>There can only be one Primary entry for Machine.</value>
+    </labels>
+    <labels>
+        <fullName>Required_Primary_Mask</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Primary_Mask</shortDescription>
+        <value>There can only be one Primary entry for Mask.</value>
+    </labels>
+    <labels>
+        <fullName>Required_Primary_diagnosis</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Primary_diagnosis</shortDescription>
+        <value>Select from the list of Primary Diagnosis.</value>
+    </labels>
+    <labels>
+        <fullName>Required_Primary_diagnosis_Month</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Primary_diagnosis_Month</shortDescription>
+        <value>Select from the list of Month of Diagnosis.</value>
+    </labels>
+    <labels>
+        <fullName>Required_Primary_diagnosis_Other</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Primary_diagnosis_Other</shortDescription>
+        <value>Specify a value for (Other) Primary Diagnosis.</value>
+    </labels>
+    <labels>
+        <fullName>Required_Primary_diagnosis_Year</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Primary_diagnosis_Year</shortDescription>
+        <value>Select from the list of Year of Diagnosis.</value>
+    </labels>
+    <labels>
+        <fullName>Required_Specify_For_Ethnicity_Other</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Specify_For_Ethnicity_Other</shortDescription>
+        <value>Specify a value for (Other) Ethnicity</value>
+    </labels>
+    <labels>
+        <fullName>Required_Terms_Conditions</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Terms_Conditions</shortDescription>
+        <value>Please Accept Terms &amp; Conditions!</value>
+    </labels>
+    <labels>
+        <fullName>Required_Treatment_Month</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Treatment_Month</shortDescription>
+        <value>Select from the list of Month of Treatment.</value>
+    </labels>
+    <labels>
+        <fullName>Required_Type_of_Study_Interested_string</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Type_of_Study_Interested_string</shortDescription>
+        <value>Tick at least one of the Type of Study Interested.</value>
+    </labels>
+    <labels>
+        <fullName>Required_Year_of_Treatment</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_Year_of_Treatment</shortDescription>
+        <value>Select from the list of Year of Treatment.</value>
+    </labels>
+    <labels>
+        <fullName>Required_country</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_country</shortDescription>
+        <value>Select from a list of valid countries.</value>
+    </labels>
+    <labels>
+        <fullName>Required_email</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_email</shortDescription>
+        <value>Provide a valid Email Address.</value>
+    </labels>
+    <labels>
+        <fullName>Required_firstname</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_firstname</shortDescription>
+        <value>Enter a value for First Name</value>
+    </labels>
+    <labels>
+        <fullName>Required_gender</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_gender</shortDescription>
+        <value>Select from a list of Genders.</value>
+    </labels>
+    <labels>
+        <fullName>Required_h_mn_other</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_h_mn_other</shortDescription>
+        <value>Specify the Manufacturer for Humidifiers.</value>
+    </labels>
+    <labels>
+        <fullName>Required_humidifier_mn</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_humidifier_mn</shortDescription>
+        <value>You have selected &quot;Yes&quot; to using a humidifier, please enter a device under Humidifier section.</value>
+    </labels>
+    <labels>
+        <fullName>Required_humidifler_mn_name</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_humidifler_mn_name</shortDescription>
+        <value>Select from the list of Manufacturers.</value>
+    </labels>
+    <labels>
+        <fullName>Required_humidifler_mn_othername</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_humidifler_mn_othername</shortDescription>
+        <value>Specify the name of Manufacturers.</value>
+    </labels>
+    <labels>
+        <fullName>Required_humidifler_mn_type</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_humidifler_mn_type</shortDescription>
+        <value>Select from the list of Product Types.</value>
+    </labels>
+    <labels>
+        <fullName>Required_humidifler_name</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_humidifler_mn_name</shortDescription>
+        <value>Select from the list of Products.</value>
+    </labels>
+    <labels>
+        <fullName>Required_lastname</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_lastname</shortDescription>
+        <value>Enter a value for Last Name.</value>
+    </labels>
+    <labels>
+        <fullName>Required_lastname_Valid</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_lastname_Valid</shortDescription>
+        <value>Please enter alphabet Characters in Name Field</value>
+    </labels>
+    <labels>
+        <fullName>Required_machine_mn</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_machine_mn</shortDescription>
+        <value>Select from the list of Manufacturers.</value>
+    </labels>
+    <labels>
+        <fullName>Required_machine_name</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_machine_name</shortDescription>
+        <value>Select from the list of Product Types.</value>
+    </labels>
+    <labels>
+        <fullName>Required_machine_other_name</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_machine_other_name</shortDescription>
+        <value>Specify a name for (Other) Machines.</value>
+    </labels>
+    <labels>
+        <fullName>Required_machine_product_Name_Other</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required machine product Name Other</shortDescription>
+        <value>Machine Product Name (Other) is Required</value>
+    </labels>
+    <labels>
+        <fullName>Required_machine_type</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_machine_type</shortDescription>
+        <value>Select from the list of Products.</value>
+    </labels>
+    <labels>
+        <fullName>Required_mask_mn</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_mask_mn</shortDescription>
+        <value>Select from the list of Manufacturers.</value>
+    </labels>
+    <labels>
+        <fullName>Required_mask_mn_other</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_mask_mn_other</shortDescription>
+        <value>Specify the Manufacture (Other) for Masks.</value>
+    </labels>
+    <labels>
+        <fullName>Required_mask_product_Name_Other</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required mask product Name Other</shortDescription>
+        <value>Mask Product Name Other is Required</value>
+    </labels>
+    <labels>
+        <fullName>Required_mask_size</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_mask_size</shortDescription>
+        <value>Select from the list of Mask Sizes.</value>
+    </labels>
+    <labels>
+        <fullName>Required_mask_type</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_mask_type</shortDescription>
+        <value>Select from the list of Product Types.</value>
+    </labels>
+    <labels>
+        <fullName>Required_maskname</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_maskname</shortDescription>
+        <value>Select from the list of Products.</value>
+    </labels>
+    <labels>
+        <fullName>Required_product_Name_For_Mftr_Equals_Other_Or_Unsure</fullName>
+        <categories>MA Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_product_Name_For_Mftr_Equals_Other_Or_Unsure</shortDescription>
+        <value>Product Name is Required</value>
+    </labels>
+    <labels>
+        <fullName>Required_state</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_state</shortDescription>
+        <value>Select from the list of States.</value>
+    </labels>
+    <labels>
+        <fullName>Required_streetAddress</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_streetAddress</shortDescription>
+        <value>Enter a value for Address.</value>
+    </labels>
+    <labels>
+        <fullName>Required_suburb</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_suburb</shortDescription>
+        <value>Enter a value for Suburb.</value>
+    </labels>
+    <labels>
+        <fullName>Required_title</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_title</shortDescription>
+        <value>Enter a value for Title</value>
+    </labels>
+    <labels>
+        <fullName>Required_valid_Confirmed_email</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_valid_Confirmed_email</shortDescription>
+        <value>Provide a Valid Confirmed Email</value>
+    </labels>
+    <labels>
+        <fullName>Required_valid_email</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_valid_email</shortDescription>
+        <value>Enter a valid email address.</value>
+    </labels>
+    <labels>
+        <fullName>Required_valid_phone</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required_valid_phone</shortDescription>
+        <value>Enter a valid 10-digit Australian Phone Number.</value>
+    </labels>
+    <labels>
+        <fullName>SHIELD_STANDARD_REPLY_TEMPLATEID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SHIELD_STANDARD_REPLY_TEMPLATEID</shortDescription>
+        <value>00X90000001GXVg</value>
     </labels>
     <labels>
         <fullName>SV_Account_Source</fullName>
@@ -28,6 +737,22 @@
         <protected>false</protected>
         <shortDescription>SV_Account_Web_Status</shortDescription>
         <value>Purchaser</value>
+    </labels>
+    <labels>
+        <fullName>SV_AirMini_Mask_Bundle_List</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_AirMini_Mask_Bundle_List</shortDescription>
+        <value>AirFit F30,AirFit F20,AirFit F20 For Her,AirFit F10,AirFit F10 For Her,AirTouch F20,AirTouch F20 Starter Kit,AirFit N30i,AirFit N20,AirFit N20 For Her,AirFit N20 Classic,AirFit P10</value>
+    </labels>
+    <labels>
+        <fullName>SV_Apple_Device_Submission_Issue_Alert</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Apple_Device_Submission_Issue_Alert</shortDescription>
+        <value>We have detected that you are using an Apple device for this registration. We request you to please switch to any other Android device or non-Apple devices to finish with the registration or contact our Support team if needed any assistance. Thank you.</value>
     </labels>
     <labels>
         <fullName>SV_Asset_Default_Quantity</fullName>
@@ -215,5 +940,141 @@
         <protected>false</protected>
         <shortDescription>SV Warranty Code Error</shortDescription>
         <value>Sorry, the Extended Warranty Code is already in use.</value>
+    </labels>
+    <labels>
+        <fullName>Secret_Key</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Site_SecretKey</shortDescription>
+        <value>6LeFbqgUAAAAAAeo4cdEBJio4waFP6EGOXBoPpK_</value>
+    </labels>
+    <labels>
+        <fullName>SectionHeader_2</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SectionHeader_2</shortDescription>
+        <value>Research Preferences</value>
+    </labels>
+    <labels>
+        <fullName>SectionHeader_4</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SectionHeader_4</shortDescription>
+        <value>Diagnosis &amp; Treatment</value>
+    </labels>
+    <labels>
+        <fullName>Site_Key</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Site_Key</shortDescription>
+        <value>6LeFbqgUAAAAACgxbCgJxuXvAbub8TKYpDHn6nbl</value>
+    </labels>
+    <labels>
+        <fullName>Site_endpoint</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Site_endpoint</shortDescription>
+        <value>https://www.google.com/recaptcha/api/siteverify</value>
+    </labels>
+    <labels>
+        <fullName>StateNames</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>StateNames</shortDescription>
+        <value>Australia Capital Territory::New South Wales::Northern Territory::Queensland::South Australia::Tasmania::Victoria::Western Australia</value>
+    </labels>
+    <labels>
+        <fullName>Terms_And_Conditions_Text1</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Terms_And_Conditions_Text1</shortDescription>
+        <value>I accept the &lt;a href=&quot;https://www.resmed.com/au/en/consumer/information-statement.html&quot; target=&quot;_blank&quot;&gt;Information Statement&lt;/a&gt; and &lt;a href=&quot;https://www.resmed.com/au/en/index/privacy.html&quot; target=&quot;_blank&quot;&gt;Privacy Policy.&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Thank_You_Message</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Thank You Message</shortDescription>
+        <value>Thank you for joining the ResMed Trials Registry. We will be in contact in the future.</value>
+    </labels>
+    <labels>
+        <fullName>Treatment_After_DOB_Check</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Treatment_After_DOB_Check</shortDescription>
+        <value>Month/Year of &quot;Treatment&quot; must be same or after Month/Year of &quot;Date Of Birth&quot;</value>
+    </labels>
+    <labels>
+        <fullName>Treatment_After_Diagnosis_Check</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Treatment_After_Diagnosis_Check</shortDescription>
+        <value>Month/Year of &quot;Treatment&quot; must be same or after Month/Year of &quot;Diagnosis&quot;</value>
+    </labels>
+    <labels>
+        <fullName>email_regex</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>email_regex</shortDescription>
+        <value>^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$</value>
+    </labels>
+    <labels>
+        <fullName>footer_Text_2</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>footer Text 2`</shortDescription>
+        <value>&amp;nbsp; ResMed may use this information that you provide in order to recruit participants for clinical research. By checking this box, you consent to this use by ResMed and its &lt;a href=&quot;https://www.resmed.com/au/en/index/privacy.html&quot; target=&quot;_blank&quot;&gt;Privacy Policy&lt;/a&gt;. If you are entering this information on behalf of another individual, you represent that you are legally authorized to provide consent on behalf of such individual.</value>
+    </labels>
+    <labels>
+        <fullName>footer_register_text</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>footer_register_text</shortDescription>
+        <value>I have read the &lt;a  href=&quot;https://www.resmed.com/au/en/consumer/information-statement.html&quot; target=&quot;_blank&quot;&gt;Information Statement&lt;/a&gt;, and agree to become ResMed Trials Registry Member.</value>
+    </labels>
+    <labels>
+        <fullName>label_specify</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>label_specify</shortDescription>
+        <value>Specify *</value>
+    </labels>
+    <labels>
+        <fullName>mobile_regex</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>mobile_regex</shortDescription>
+        <value>^(04)[0-9]{8}$</value>
+    </labels>
+    <labels>
+        <fullName>name_regex</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>name_regex</shortDescription>
+        <value>^[a-zA-Z]+(([&#39;_,. -][a-zA-Z ])?[a-zA-Z]*)*$</value>
+    </labels>
+    <labels>
+        <fullName>phone_regex</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>phone_regex</shortDescription>
+        <value>^(02|03|07|08)[0-9]{8}$</value>
     </labels>
 </CustomLabels>

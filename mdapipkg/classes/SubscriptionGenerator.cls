@@ -14,6 +14,8 @@ public without sharing class SubscriptionGenerator {
      * Description. This public would be invoked by client Apex classes when there's a need to create
      *              a subscription mapping between an account and subscription. This will build a new record 
      *              out of the GUID and URL and will be inserted the Subscription Map.
+     * @param String type - the type of subscription to unsubscribe
+     * @param String accId - the account Id to search for
      * @param String guid - the unique guid to set as paramater to the URL
      * @param String URLKey - the URLKey (MasterLabel) to retrieve from the Base_URL__mdt
      */
@@ -29,20 +31,21 @@ public without sharing class SubscriptionGenerator {
 
         // Step 2. Build the whole unsubscribe URL and create an entry into the Subscription_Map__c
         String unsubURL = this.locURL.trim() + guid.trim();
-
-        Subscription_Map__c mapRec = new Subscription_Map__c(
-            Unsubscribe_URL__c = unsubURL, 
-            Type__c = type, 
-            GUID__c = guid, 
-            Account__c = accId);
+        Subscription_Map__c mapRec = NULL;
 
         try {
-            insert mapRec;
+             mapRec = new Subscription_Map__c(
+                Unsubscribe_URL__c = unsubURL, 
+                Type__c = type, 
+                GUID__c = guid.trim(), 
+                Account__c = accId);
+    
+                insert mapRec;
         } catch (Exception e) {
-            System.debug(CLASS_NAME + 'Error while inserting new Subscription Map record with guid ' + guid + ' | Message ' + e.getMessage());
+            System.debug(CLASS_NAME + 'Error while inserting new Subscription Map record with guid ' + guid.trim() + ' | Message ' + e.getMessage());
         }
 
-        if (mapRec.Id == NULL) {
+        if (mapRec == NULL) {
             return false;
         }
 

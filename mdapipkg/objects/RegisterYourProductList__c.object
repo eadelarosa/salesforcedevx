@@ -3,6 +3,8 @@
     <customSettingsType>List</customSettingsType>
     <description>Register Your Product List</description>
     <enableFeeds>false</enableFeeds>
+    <label>Register Your Product List</label>
+    <visibility>Public</visibility>
     <fields>
         <fullName>ProductName__c</fullName>
         <description>Product Name</description>
@@ -40,7 +42,6 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <label>Register Your Product List</label>
     <listViews>
         <fullName>All</fullName>
         <columns>Sort_Index__c</columns>
@@ -69,5 +70,4 @@
         <filterScope>Everything</filterScope>
         <label>By Sort Index</label>
     </listViews>
-    <visibility>Public</visibility>
 </CustomObject>

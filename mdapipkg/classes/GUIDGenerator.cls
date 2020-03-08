@@ -58,6 +58,11 @@ public with sharing class GUIDGenerator {
             RETURN NULL;
         }
 
+        if (clearData == NULL) {
+            System.debug(CLASS_NAME + ' | Parameter MUST NOT be NULL.');
+            RETURN NULL;
+        }
+
         Blob newGUID = Crypto.encryptWithManagedIV(AES_ALGO, this.CRYPTOKEY, Blob.valueOf(clearData));
         String strGUID = EncodingUtil.base64Encode(newGUID);
         System.debug(CLASS_NAME + ' | New GUID generated - ' + strGUID);

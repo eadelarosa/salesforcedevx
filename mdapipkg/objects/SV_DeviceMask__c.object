@@ -153,6 +153,25 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>SV Device-Mask</label>
+    <nameField>
+        <displayFormat>DM-{00000}</displayFormat>
+        <label>SV DeviceMask Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>SV Devices-Masks</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Device_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Mask_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Mask_Size__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Device_Product_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Mask_Product_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Extended_Warranty_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Is_Web_Enabled__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <fields>
         <fullName>Device_Name__c</fullName>
         <encryptionScheme>None</encryptionScheme>
@@ -270,7 +289,6 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <label>SV Device-Mask</label>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
@@ -285,22 +303,4 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
-    <nameField>
-        <displayFormat>DM-{00000}</displayFormat>
-        <label>SV DeviceMask Name</label>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>SV Devices-Masks</pluralLabel>
-    <searchLayouts>
-        <customTabListAdditionalFields>Device_Name__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Mask_Name__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Mask_Size__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Device_Product_Code__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Mask_Product_Code__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Extended_Warranty_Code__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Is_Web_Enabled__c</customTabListAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>

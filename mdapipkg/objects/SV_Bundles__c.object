@@ -153,6 +153,17 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>SV Bundles</label>
+    <nameField>
+        <displayFormat>BN-{0000}</displayFormat>
+        <label>SV Bundles Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>SV Bundles</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
     <fields>
         <fullName>Device_Mask__c</fullName>
         <externalId>false</externalId>
@@ -192,15 +203,4 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <label>SV Bundles</label>
-    <nameField>
-        <displayFormat>BN-{0000}</displayFormat>
-        <label>SV Bundles Name</label>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>SV Bundles</pluralLabel>
-    <searchLayouts/>
-    <sharingModel>ControlledByParent</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>

@@ -3,6 +3,9 @@
     <description>This is the base URL of the target site exposed to the internet. The format of this URL MUST BE in the form of https://&lt;instance&gt;.force.com/services/apexrest/&lt;restResourceURLMapping&gt;.
 
 Example: http://dev4ed-resmed-anz.cs6.force.com/SubscriptionProcessor/&lt;parameter&gt;</description>
+    <label>Base URL</label>
+    <pluralLabel>Base URLs</pluralLabel>
+    <visibility>Public</visibility>
     <fields>
         <fullName>Base_URL__c</fullName>
         <businessStatus>Active</businessStatus>
@@ -12,7 +15,6 @@ Example: http://dev4ed-resmed-anz.cs6.force.com/SubscriptionProcessor/&lt;parame
         <required>false</required>
         <type>Url</type>
     </fields>
-    <label>Base URL</label>
     <listViews>
         <fullName>Default</fullName>
         <columns>MasterLabel</columns>
@@ -21,6 +23,4 @@ Example: http://dev4ed-resmed-anz.cs6.force.com/SubscriptionProcessor/&lt;parame
         <filterScope>Everything</filterScope>
         <label>Default</label>
     </listViews>
-    <pluralLabel>Base URLs</pluralLabel>
-    <visibility>Public</visibility>
 </CustomObject>

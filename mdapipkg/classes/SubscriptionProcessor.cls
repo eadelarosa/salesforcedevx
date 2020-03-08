@@ -12,21 +12,24 @@
 @RestResource(urlMapping='/SubscriptionProcessor/*')
 global without sharing class SubscriptionProcessor {
     
+    static final String URL_MAPPING_NAME = 'SubscriptionProcessor';
+    static final Integer URL_MAPPING_LENGTH = URL_MAPPING_NAME.length() + 1;
+
     @HttpGet
     global static void doGet() {
         
         // Retrieve the request object
         RestRequest req = RestContext.request;
-        RestResponse res = RestContext.response;
 
         // Retrieve and validate the GUID from the request
-        String guid = req.requestURI.substring(req.requestURI.lastIndexOf('/') + 1);
-
+        String guid = req.requestURI.substring(req.requestURI.indexOf(URL_MAPPING_NAME) + URL_MAPPING_LENGTH);
+        
         // Query Subscription mapping table for the given GUID
         Subscription_Map__c subMap = null;
         
         try {
             subMap = [SELECT Id, GUID__c, Unsubscribed__c, Date_Unsubscribed__c FROM Subscription_Map__c WHERE GUID__c = :guid AND Unsubscribed__c = False LIMIT 1];
+            System.debug('SubscriptionProcessor | Value of the queried Subscription Map: ' + subMap);            
         } catch (Exception e) {
             // It's okay if nonthing is found; it would mean that the GUID may have already been unsubscribed
             System.debug('There was no entry found in the database for GUID ' + guid);            
@@ -45,10 +48,13 @@ global without sharing class SubscriptionProcessor {
 
                 // Update the record
                 update subMap;
+                System.debug('SubscriptionProcessor | Updated the record Subscription Map successfully - Unsubscribed__c = ' + subMap.Unsubscribed__c);            
             }
         }
 
+        RestResponse res = RestContext.response;
+        System.debug('Value of RestResponse: ' + res);
         res.addHeader('Content-Type', 'text/html');
-        res.responseBody = Blob.valueOf('Your subscriber ID ' + guid + ' has been successfully unsubscribed' );
+        res.responseBody = Blob.valueOf('<html><head><style>.center {font-family: Arial, Helvetica, sans-serif; line-height: 200px; height: 200px; text-align: center; border: 3px solid #000080;}</style></head><body><div class=\"center\"><p>Your subscriber ID ' + guid + ' was successfully unsubscribed</p></div></body></html>' );
     }
 }

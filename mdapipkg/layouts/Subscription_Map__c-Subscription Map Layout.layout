@@ -30,10 +30,6 @@
                 <behavior>Edit</behavior>
                 <field>Date_Unsubscribed__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Unsubscribe_URL__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

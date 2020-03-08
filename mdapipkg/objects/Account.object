@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>AccountName_SPE__c</fullName>
+        <description>Encrypted Account Name For Members</description>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Account Name (PE)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPAP_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Web Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Trialist</fullName>
+                    <default>false</default>
+                    <label>Trialist</label>
+                </value>
+                <value>
+                    <fullName>Purchaser</fullName>
+                    <default>false</default>
+                    <label>Purchaser</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FirstName_SPE__c</fullName>
+        <description>Encrypted First Name For Members</description>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>First Name (PE)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Gender__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the gender of the member.
+M- Male
+F- Female</inlineHelpText>
+        <label>Gender</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>M</fullName>
+                    <default>false</default>
+                    <label>M</label>
+                </value>
+                <value>
+                    <fullName>F</fullName>
+                    <default>false</default>
+                    <label>F</label>
+                </value>
+                <value>
+                    <fullName>Prefer not to mention</fullName>
+                    <default>false</default>
+                    <label>Prefer not to mention</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LastName_SPE__c</fullName>
+        <description>Encrypted Last Name For Members</description>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last Name (PE)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mailing_City_SPE__c</fullName>
+        <description>Encrypted Mailing City (PE) For Members</description>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Mailing City (PE)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mailing_Country_SPE__c</fullName>
+        <description>Encrypted Mailing Country (PE) For Members</description>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Mailing Country (PE)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mailing_State_Province_SPE__c</fullName>
+        <description>Encrypted Mailing State (PE) For Members</description>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Mailing State/Province (PE)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mailing_Street_SPE__c</fullName>
+        <description>Encrypted Mailing Street (PE) For Members</description>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Mailing  Street (PE)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mailing_Zip_Postal_Code_SPE__c</fullName>
+        <description>Encrypted Mailing Zip/Postal Code (PE) For Members</description>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Mailing Zip/Postal Code (PE)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MembershipNumber_Auto__c</fullName>
+        <displayFormat>{000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Membership Number (Auto)</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>PersonBirthdate_SPE__c</fullName>
+        <description>Encrypted Birthdate For Members</description>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Birthdate (PE)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PersonEmail_SPE__c</fullName>
+        <description>Encrypted Email For Members</description>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Email (PE)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PersonMobilePhone_SPE__c</fullName>
+        <description>Encrypted Mobile For Members</description>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Mobile (PE)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Phone_SPE__c</fullName>
+        <description>Encrypted Phone For Members</description>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Phone (PE)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Product_Rego_Account_Name__c</fullName>
+        <description>TASK0287184.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Required if Online Directory Listed is ticked. Account name displayed on the sv product rego page. Must include Account Name - Suburb</inlineHelpText>
+        <label>Product Rego Account Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Referring_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Referring Partner</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 AND (2 OR 3) OR 4 OR 5 OR 6</booleanFilter>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Partner, Accredited Partner, Partner - Sleep Lab</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Accredited Partner, Sleep Lab, Partner - Sleep Lab, Sleep Specialist</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Accredited Partner, Inactive/closed</value>
+            </filterItems>
+            <filterItems>
+                <field>$Profile.Name</field>
+                <operation>equals</operation>
+                <value>sleepvantage Manager, sleepvantage Super Consultant, System Administrator</value>
+            </filterItems>
+            <filterItems>
+                <field>$Profile.Name</field>
+                <operation>equals</operation>
+                <value>customers Profile</value>
+            </filterItems>
+            <filterItems>
+                <field>$Profile.Name</field>
+                <operation>equals</operation>
+                <value>ROC Integration</value>
+            </filterItems>
+            <infoMessage>The Referring Partner must be a partner type of Partner or Partner - Sleep Lab.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Member Referral (Referring Partner)</relationshipLabel>
+        <relationshipName>Referring_Partner</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>sleepvantage Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Member</fullName>
+                    <default>false</default>
+                    <label>Member</label>
+                </value>
+                <value>
+                    <fullName>Non-Member - General</fullName>
+                    <default>false</default>
+                    <label>Non-Member - General</label>
+                </value>
+                <value>
+                    <fullName>Non-Member - Warranty</fullName>
+                    <default>false</default>
+                    <label>Non-Member - Warranty</label>
+                </value>
+                <value>
+                    <fullName>Non-Member - Terminated</fullName>
+                    <default>false</default>
+                    <label>Non-Member - Terminated</label>
+                </value>
+                <value>
+                    <fullName>Non-Member - Deceased</fullName>
+                    <default>false</default>
+                    <label>Non-Member - Deceased</label>
+                </value>
+                <value>
+                    <fullName>Non-Member - Enable</fullName>
+                    <default>false</default>
+                    <label>Non-Member - Enable</label>
+                </value>
+                <value>
+                    <fullName>Non-Member - DHB</fullName>
+                    <default>false</default>
+                    <label>Non-Member - DHB</label>
+                </value>
+                <value>
+                    <fullName>Non-Member - Other Tenders</fullName>
+                    <default>false</default>
+                    <label>Non-Member - Other Tenders</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>isWebEnabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>sleepVantage use only. If checked, the partner will display on the online partner list. If false, the partner will not be displayed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>sleepVantage use only. If checked, the partner will display on the online partner list. If false, the partner will not be displayed.</inlineHelpText>
+        <label>Outlet Directory Listed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>membershipNumberFinal__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( membershipNumberOriginal__c ), MembershipNumber_Auto__c , membershipNumberOriginal__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Membership Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>membershipNumberOriginal__c</fullName>
+        <description>Membership Number migrated from the old SV system.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Membership Number migrated from the old SV system.</inlineHelpText>
+        <label>Membership Number (Original)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>membershipSource__c</fullName>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Mail</fullName>
+                    <default>false</default>
+                    <label>Mail</label>
+                </value>
+                <value>
+                    <fullName>Online</fullName>
+                    <default>false</default>
+                    <label>Online</label>
+                </value>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>

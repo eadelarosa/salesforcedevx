@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_wards__c</fullName>
+    <description>Type of hospital departments known</description>
+    <externalId>false</externalId>
+    <label>Type of wards</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Burns Unit</fullName>
+                <default>false</default>
+                <label>Burns Unit</label>
+            </value>
+            <value>
+                <fullName>Cath Lab</fullName>
+                <default>false</default>
+                <label>Cath Lab</label>
+            </value>
+            <value>
+                <fullName>Chemotherapy</fullName>
+                <default>false</default>
+                <label>Chemotherapy</label>
+            </value>
+            <value>
+                <fullName>Coronary Care unit</fullName>
+                <default>false</default>
+                <label>Coronary Care unit</label>
+            </value>
+            <value>
+                <fullName>Dialysis Unit</fullName>
+                <default>false</default>
+                <label>Dialysis Unit</label>
+            </value>
+            <value>
+                <fullName>Elective surgery</fullName>
+                <default>false</default>
+                <label>Elective surgery</label>
+            </value>
+            <value>
+                <fullName>Emergency Department</fullName>
+                <default>false</default>
+                <label>Emergency Department</label>
+            </value>
+            <value>
+                <fullName>Intensive Care Unit</fullName>
+                <default>false</default>
+                <label>Intensive Care Unit</label>
+            </value>
+            <value>
+                <fullName>Neonatal intensive care</fullName>
+                <default>false</default>
+                <label>Neonatal intensive care</label>
+            </value>
+            <value>
+                <fullName>Obstetrics</fullName>
+                <default>false</default>
+                <label>Obstetrics</label>
+            </value>
+            <value>
+                <fullName>Oncology Unit</fullName>
+                <default>false</default>
+                <label>Oncology Unit</label>
+            </value>
+            <value>
+                <fullName>Paediatrics Unit</fullName>
+                <default>false</default>
+                <label>Paediatrics Unit</label>
+            </value>
+            <value>
+                <fullName>Psychiatric ward</fullName>
+                <default>false</default>
+                <label>Psychiatric ward</label>
+            </value>
+            <value>
+                <fullName>Rehabilitation</fullName>
+                <default>false</default>
+                <label>Rehabilitation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

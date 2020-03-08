@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Hub__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This will be ticked with outlets sign up to the marketing hub</description>
+    <externalId>false</externalId>
+    <label>Marketing Hub</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

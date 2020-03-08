@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>By_appointment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>For those outlet directory listed partners that want &#39;by appointment&#39; displayed next to the phone number.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For those outlet directory listed partners that want &#39;by appointment&#39; displayed next to the phone number.</inlineHelpText>
+    <label>By appointment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

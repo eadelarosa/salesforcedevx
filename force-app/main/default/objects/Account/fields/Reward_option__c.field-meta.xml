@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reward_option__c</fullName>
+    <description>Select the reward option
+Movie ticket only will assign 2 movie tickets per 10 members on the contact for movie ticket
+Gift card only will assign 1 gift card per 10 members on the contact for gift card
+Both will assign 2 movie tickets to the contact for movie ticket for the first 10 members and assign 1 gift card to the contact for gift card for the next 10 members, and so on.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Movie ticket only will assign 2 movie tickets per 10 members for movie ticket contact
+Gift card only will assign 1 gift card per 10 members on the gift card contact
+Both will assign 2 movie tickets for first 10 members and 1 gift card to the next 10.</inlineHelpText>
+    <label>Reward option</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Movie ticket</fullName>
+                <default>false</default>
+                <label>Movie ticket</label>
+            </value>
+            <value>
+                <fullName>Gift card</fullName>
+                <default>false</default>
+                <label>Gift card</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

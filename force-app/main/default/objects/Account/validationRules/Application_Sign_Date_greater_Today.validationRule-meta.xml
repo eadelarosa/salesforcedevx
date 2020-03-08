@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Sign_Date_greater_Today</fullName>
+    <active>false</active>
+    <description>The application signed date can&#39;t be greater than today.</description>
+    <errorConditionFormula>applicationSignedDate__c  &gt; TODAY()</errorConditionFormula>
+    <errorMessage>The application signed date can&#39;t be greater than today.</errorMessage>
+</ValidationRule>

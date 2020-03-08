@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Approvals__c</fullName>
+    <description>Number of approvals for this customers</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of approvals for this customers</inlineHelpText>
+    <label>Number of Approvals</label>
+    <summaryForeignKey>Approval__c.Related_To_Member_Patient__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

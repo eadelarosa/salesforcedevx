@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone</fullName>
+    <encryptionScheme>None</encryptionScheme>
+    <inlineHelpText>If phone formatting not applied please check number of digits: 
+* AUS phone: enter all 10 digits including area code without space; 
+* NZ phone, 9 digits including area code.</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+</CustomField>

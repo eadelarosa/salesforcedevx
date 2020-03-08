@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allow_as_Purchase_From_on_SV_web__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Allow as Purchase Store on SV website</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Allow as Purchase Store on SV website</inlineHelpText>
+    <label>Allow as Purchase From on SV web</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

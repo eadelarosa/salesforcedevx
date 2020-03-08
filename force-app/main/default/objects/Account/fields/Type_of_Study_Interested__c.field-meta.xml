@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Study_Interested__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of Study Interested</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New mask trials (take home a mask prototype to test)</fullName>
+                <default>false</default>
+                <label>New mask trials (take home a mask prototype to test)</label>
+            </value>
+            <value>
+                <fullName>New machine trials (take home a new machine to test)</fullName>
+                <default>false</default>
+                <label>New machine trials (take home a new machine to test)</label>
+            </value>
+            <value>
+                <fullName>Usability testing (attend a session to test how user friendly a mask/ machine/ software is)</fullName>
+                <default>false</default>
+                <label>Usability testing (attend a session to test how user friendly a mask/ machine/ software is)</label>
+            </value>
+            <value>
+                <fullName>Focus groups (attend a session with other device users to share thoughts and ideas)</fullName>
+                <default>false</default>
+                <label>Focus groups (attend a session with other device users to share thoughts and ideas)</label>
+            </value>
+            <value>
+                <fullName>Interviews (share your thoughts and ideas on products one-on-one)</fullName>
+                <default>false</default>
+                <label>Interviews (share your thoughts and ideas on products one-on-one)</label>
+            </value>
+            <value>
+                <fullName>Online surveys/questionnaires (share your thoughts and ideas through online forms)</fullName>
+                <default>false</default>
+                <label>Online surveys/questionnaires (share your thoughts and ideas through online forms)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

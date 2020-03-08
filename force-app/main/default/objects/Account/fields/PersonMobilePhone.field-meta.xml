@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PersonMobilePhone</fullName>
+    <encryptionScheme>None</encryptionScheme>
+    <inlineHelpText>If mobile formatting not applied please check number of digits: 
+* Australia and New Zealand mobile please enter all 10 digits without space.</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+</CustomField>

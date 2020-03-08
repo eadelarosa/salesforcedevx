@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activate_WebSite_User_if_no_email</fullName>
+    <active>true</active>
+    <description>Activate Web Site user can&#39;t be checked in if the member doesn&#39;t have an email</description>
+    <errorConditionFormula>AND(
+Active_Website_User__c = true,
+  PersonEmail_SPE__c = null)</errorConditionFormula>
+    <errorMessage>You can&#39;t activate website user if the member doesn&#39;t have an email address</errorMessage>
+</ValidationRule>

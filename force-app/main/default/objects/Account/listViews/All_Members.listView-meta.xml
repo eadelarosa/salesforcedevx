@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Members</fullName>
+    <columns>AccountName_SPE__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>membershipNumberFinal__c</columns>
+    <columns>Status__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>diagnosedDate__c</columns>
+    <columns>PC_BIRTHDATE</columns>
+    <columns>PC_EMAIL</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Member</value>
+    </filters>
+    <label>All Members</label>
+    <sharedTo>
+        <group>sleepvantage</group>
+        <role>ANZ_Marketing</role>
+    </sharedTo>
+</ListView>

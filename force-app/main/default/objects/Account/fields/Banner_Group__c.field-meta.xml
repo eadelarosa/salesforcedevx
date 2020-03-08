@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Banner_Group__c</fullName>
+    <description>Store location has a naming convention. Being part of a Banner Group doesn&#39;t mean head office makes decisions on buying price, store activity etc. These businesses still make independent decisions on the sleep business they run.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Business that is part of a banner group.</inlineHelpText>
+    <label>Banner Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ALH</fullName>
+                <default>false</default>
+                <label>ALH</label>
+            </value>
+            <value>
+                <fullName>Amcal</fullName>
+                <default>false</default>
+                <label>Amcal</label>
+            </value>
+            <value>
+                <fullName>APSS</fullName>
+                <default>false</default>
+                <label>APSS</label>
+            </value>
+            <value>
+                <fullName>Bayside Healthcare</fullName>
+                <default>false</default>
+                <label>Bayside Healthcare</label>
+            </value>
+            <value>
+                <fullName>Benchmark Sleep Services</fullName>
+                <default>false</default>
+                <label>Benchmark Sleep Services</label>
+            </value>
+            <value>
+                <fullName>Blooms</fullName>
+                <default>false</default>
+                <label>Blooms</label>
+            </value>
+            <value>
+                <fullName>BOC</fullName>
+                <default>false</default>
+                <label>BOC</label>
+            </value>
+            <value>
+                <fullName>Cardio Respiratory</fullName>
+                <default>false</default>
+                <label>Cardio Respiratory</label>
+            </value>
+            <value>
+                <fullName>Careflight Int. Air Ambulance</fullName>
+                <default>false</default>
+                <label>Careflight Int. Air Ambulance</label>
+            </value>
+            <value>
+                <fullName>Catalyst</fullName>
+                <default>false</default>
+                <label>Catalyst</label>
+            </value>
+            <value>
+                <fullName>Chemistworks</fullName>
+                <default>false</default>
+                <label>Chemistworks</label>
+            </value>
+            <value>
+                <fullName>Cincotta</fullName>
+                <default>false</default>
+                <label>Cincotta</label>
+            </value>
+            <value>
+                <fullName>CLM Sleep Co.</fullName>
+                <default>false</default>
+                <label>CLM Sleep Co.</label>
+            </value>
+            <value>
+                <fullName>CPAP Australia</fullName>
+                <default>false</default>
+                <label>CPAP Australia</label>
+            </value>
+            <value>
+                <fullName>CPAP Central</fullName>
+                <default>false</default>
+                <label>CPAP Central</label>
+            </value>
+            <value>
+                <fullName>CPAP Connect Australia</fullName>
+                <default>false</default>
+                <label>CPAP Connect Australia</label>
+            </value>
+            <value>
+                <fullName>CPAP Direct</fullName>
+                <default>false</default>
+                <label>CPAP Direct</label>
+            </value>
+            <value>
+                <fullName>Electro Medical Group</fullName>
+                <default>false</default>
+                <label>Electro Medical Group</label>
+            </value>
+            <value>
+                <fullName>Guardian</fullName>
+                <default>false</default>
+                <label>Guardian</label>
+            </value>
+            <value>
+                <fullName>HSS</fullName>
+                <default>false</default>
+                <label>HSS</label>
+            </value>
+            <value>
+                <fullName>JCIN</fullName>
+                <default>false</default>
+                <label>JCIN</label>
+            </value>
+            <value>
+                <fullName>Lifetime care and support Authority of NSW</fullName>
+                <default>false</default>
+                <label>Lifetime care and support Authority of NSW</label>
+            </value>
+            <value>
+                <fullName>NSW CPAP</fullName>
+                <default>false</default>
+                <label>NSW CPAP</label>
+            </value>
+            <value>
+                <fullName>Optimal Pharmacy</fullName>
+                <default>false</default>
+                <label>Optimal Pharmacy</label>
+            </value>
+            <value>
+                <fullName>Perth CPAP</fullName>
+                <default>false</default>
+                <label>Perth CPAP</label>
+            </value>
+            <value>
+                <fullName>Pharmacy 777</fullName>
+                <default>false</default>
+                <label>Pharmacy 777</label>
+            </value>
+            <value>
+                <fullName>Priceline</fullName>
+                <default>false</default>
+                <label>Priceline</label>
+            </value>
+            <value>
+                <fullName>ResSleep</fullName>
+                <default>false</default>
+                <label>ResSleep</label>
+            </value>
+            <value>
+                <fullName>SBS</fullName>
+                <default>false</default>
+                <label>SBS</label>
+            </value>
+            <value>
+                <fullName>Sleep for Health and Safety</fullName>
+                <default>false</default>
+                <label>Sleep for Health and Safety</label>
+            </value>
+            <value>
+                <fullName>Sleep GP</fullName>
+                <default>false</default>
+                <label>Sleep GP</label>
+            </value>
+            <value>
+                <fullName>Sleep MGT Group</fullName>
+                <default>false</default>
+                <label>Sleep MGT Group</label>
+            </value>
+            <value>
+                <fullName>TWCM</fullName>
+                <default>false</default>
+                <label>TWCM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

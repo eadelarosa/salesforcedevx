@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consent_to_Share_Data_with_Third_Party__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Added for DVA Project</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Consent from customer to share data with third party</inlineHelpText>
+    <label>Consent to Share Data with Third Party</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DCS_Card_Type_mandatory_if_GOVT_AG_Sel</fullName>
+    <active>true</active>
+    <description>Card Type is mandatory when government agency is selected.</description>
+    <errorConditionFormula>if(not(ISPICKVAL(Government_Agency__c, &#39;&#39;)),
+OR(ISPICKVAL( Card_Type__c, &#39;&#39;))
+,false)</errorConditionFormula>
+    <errorDisplayField>Card_Type__c</errorDisplayField>
+    <errorMessage>If &#39;Government Agency&#39; is selected, please ensure to SELECT &#39;Card Type&#39; in order to save the record.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AirView__c</fullName>
+    <description>Registered to AirView and if customer is exempt from billing.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Is the customer currently on AirView and are they exempt from billing?</inlineHelpText>
+    <label>AirView</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>Exempt 1 month</fullName>
+                <default>false</default>
+                <label>Exempt 1 month</label>
+            </value>
+            <value>
+                <fullName>Exempt 3 months</fullName>
+                <default>false</default>
+                <label>Exempt 3 months</label>
+            </value>
+            <value>
+                <fullName>Exempt all time</fullName>
+                <default>false</default>
+                <label>Exempt all time</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

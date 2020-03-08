@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fax_SPE__c</fullName>
+    <description>A platform encrypted field to store the fax number of the patient (if available).</description>
+    <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Fax SPE</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Phone</type>
+</CustomField>

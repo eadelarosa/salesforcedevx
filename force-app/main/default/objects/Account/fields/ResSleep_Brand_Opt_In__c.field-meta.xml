@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ResSleep_Brand_Opt_In__c</fullName>
+    <description>This is an ad-hoc Account inline field for ResSleep opt out flag - while the relationship Retail Brand is being worked out. Phase-I short-term solution.</description>
+    <externalId>false</externalId>
+    <label>ResSleep Brand Opt-In</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>true</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Opt-In</fullName>
+                <default>false</default>
+                <label>Opt-In</label>
+            </value>
+            <value>
+                <fullName>Opt-Out</fullName>
+                <default>false</default>
+                <label>Opt-Out</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

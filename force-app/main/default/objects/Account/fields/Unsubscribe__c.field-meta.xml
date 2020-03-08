@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unsubscribe__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Unsubscribed from all communications from sleepvantage and ResMed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check if patient wants to unsubscribe from all communications from sleepvantage and ResMed.</inlineHelpText>
+    <label>Unsubscribe</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

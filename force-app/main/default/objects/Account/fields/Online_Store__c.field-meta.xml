@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Online_Store__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Does this Authorised Dealer have an online store</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Does this Authorised Dealer have an online store?</inlineHelpText>
+    <label>Online Store</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

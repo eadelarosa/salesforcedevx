@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Medical_Affairs_Account</fullName>
+    <booleanFilter>1</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>AccountName_SPE__c</columns>
+    <columns>PersonEmail_SPE__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>Is_Resmed_Employee__c</columns>
+    <columns>Gender__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>PersonAccount.Medical_Affairs</value>
+    </filters>
+    <label>All Medical Affairs Account</label>
+    <language>en_US</language>
+</ListView>

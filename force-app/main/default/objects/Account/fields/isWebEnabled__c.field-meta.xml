@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>isWebEnabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>sleepVantage use only. If checked, the partner will display on the online partner list. If false, the partner will not be displayed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>sleepVantage use only. If checked, the partner will display on the online partner list. If false, the partner will not be displayed.</inlineHelpText>
+    <label>Outlet Directory Listed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

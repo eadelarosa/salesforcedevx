@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Delivery_Time_For_Prescriptions__c</fullName>
+    <externalId>false</externalId>
+    <label>Total Delivery Time For Prescriptions</label>
+    <summarizedField>Prescription__c.Total_Delivery_Time_in_Days__c</summarizedField>
+    <summaryFilterItems>
+        <field>Prescription__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Filled, Cancelled</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Prescription__c.Related_To_Member_Patient__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This setting contains the crypto key that will be used to generate the GUID for each subscription. NOTE: The crypto is only used to guarantee uniqueness of keys - but NOT for the purpose of encrypting and securing data. Hence this custom metadata doesn&apos;t require to be created as &quot;protected&quot; form. Also, the app and this metadata are not intended for distribution to other orgs.</description>
+    <fields>
+        <fullName>Keys__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Keys</label>
+        <length>56</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Unsubscribe Crypto Key</label>
+    <pluralLabel>Unsubscribe Crypto Keys</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

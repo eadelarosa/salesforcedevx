@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DCS_Bill_state_mandatory_if_GOVT_AG_Sel</fullName>
+    <active>false</active>
+    <description>If &#39;Government Agency&#39; is selected, billing state required.</description>
+    <errorConditionFormula>if(not(ISPICKVAL(Government_Agency__c, &#39;&#39;)),
+OR(ISBLANK(BillingState))
+,false)</errorConditionFormula>
+    <errorDisplayField>BillingState</errorDisplayField>
+    <errorMessage>If &#39;Government Agency&#39; is selected, please ensure to ADD &#39;Billing State/Province&#39; in order to save the record.</errorMessage>
+</ValidationRule>

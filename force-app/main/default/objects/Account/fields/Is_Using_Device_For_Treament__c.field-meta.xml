@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Using_Device_For_Treament__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>MA Registration Field - &quot;Do You Use a Device For Treatment&quot;. This should be enabled if any of the Primary Diagnosis is selected (except when *Prefer not to mention* or *I do not have a relevant medical diagnosis* option is selected).</description>
+    <externalId>false</externalId>
+    <label>Do You Use A Device For Treatment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

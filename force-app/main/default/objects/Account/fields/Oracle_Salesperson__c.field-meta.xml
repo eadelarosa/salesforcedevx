@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oracle_Salesperson__c</fullName>
+    <externalId>false</externalId>
+    <label>Oracle Salesperson</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AFF - Affiliates</fullName>
+                <default>false</default>
+                <label>AFF - Affiliates</label>
+            </value>
+            <value>
+                <fullName>Australia Sales</fullName>
+                <default>false</default>
+                <label>Australia Sales</label>
+            </value>
+            <value>
+                <fullName>Inside Sales Support</fullName>
+                <default>false</default>
+                <label>Inside Sales Support</label>
+            </value>
+            <value>
+                <fullName>NSW - Northern/Southern</fullName>
+                <default>false</default>
+                <label>NSW - Northern/Southern</label>
+            </value>
+            <value>
+                <fullName>NSW1 - Northern NSW</fullName>
+                <default>false</default>
+                <label>NSW1 - Northern NSW</label>
+            </value>
+            <value>
+                <fullName>NSW2 - Southern NSW</fullName>
+                <default>false</default>
+                <label>NSW2 - Southern NSW</label>
+            </value>
+            <value>
+                <fullName>NZ Sales</fullName>
+                <default>false</default>
+                <label>NZ Sales</label>
+            </value>
+            <value>
+                <fullName>QLD1 - QLD</fullName>
+                <default>false</default>
+                <label>QLD1 - QLD</label>
+            </value>
+            <value>
+                <fullName>QLD2 - QLD</fullName>
+                <default>false</default>
+                <label>QLD2 - QLD</label>
+            </value>
+            <value>
+                <fullName>QLD3 - QLD</fullName>
+                <default>false</default>
+                <label>QLD3 - QLD</label>
+            </value>
+            <value>
+                <fullName>NT1 - NT</fullName>
+                <default>false</default>
+                <label>NT1 - NT</label>
+            </value>
+            <value>
+                <fullName>SA1 - SA</fullName>
+                <default>false</default>
+                <label>SA1 - SA</label>
+            </value>
+            <value>
+                <fullName>TAS1 - TAS</fullName>
+                <default>false</default>
+                <label>TAS1 - TAS</label>
+            </value>
+            <value>
+                <fullName>VIC1 - VIC</fullName>
+                <default>false</default>
+                <label>VIC1 - VIC</label>
+            </value>
+            <value>
+                <fullName>VIC2 - VIC</fullName>
+                <default>false</default>
+                <label>VIC2 - VIC</label>
+            </value>
+            <value>
+                <fullName>WA1 - WA</fullName>
+                <default>false</default>
+                <label>WA1 - WA</label>
+            </value>
+            <value>
+                <fullName>WA2 - WA</fullName>
+                <default>false</default>
+                <label>WA2 - WA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

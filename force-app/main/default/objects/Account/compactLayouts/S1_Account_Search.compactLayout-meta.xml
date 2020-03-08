@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>S1_Account_Search</fullName>
+    <fields>Name</fields>
+    <fields>Type</fields>
+    <fields>Online_City__c</fields>
+    <fields>ShippingAddress</fields>
+    <label>S1 Account Search</label>
+</CompactLayout>

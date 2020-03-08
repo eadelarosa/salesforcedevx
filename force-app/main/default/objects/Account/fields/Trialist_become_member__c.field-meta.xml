@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trialist_become_member__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>True when a trialist becomes a member</description>
+    <externalId>false</externalId>
+    <label>Trialist become member</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

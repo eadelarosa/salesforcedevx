@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPAP_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Web Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Trialist</fullName>
+                <default>false</default>
+                <label>Trialist</label>
+            </value>
+            <value>
+                <fullName>Purchaser</fullName>
+                <default>false</default>
+                <label>Purchaser</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

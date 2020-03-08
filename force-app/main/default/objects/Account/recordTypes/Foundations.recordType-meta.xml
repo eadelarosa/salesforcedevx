@@ -1,0 +1,2040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foundations</fullName>
+    <active>true</active>
+    <description>[Wholesale] charity, foundations and research groups</description>
+    <label>Foundations</label>
+    <picklistValues>
+        <picklist>AHI_Score__c</picklist>
+        <values>
+            <fullName>Mild</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moderate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Severe</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sleepvantage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AirView__c</picklist>
+        <values>
+            <fullName>Exempt 3 months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exempt all time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Banner_Group__c</picklist>
+        <values>
+            <fullName>ALH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APSS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amcal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bayside Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Benchmark Sleep Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blooms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLM Sleep Co%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAP Australia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAP Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAP Connect Australia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAP Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cardio Respiratory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Careflight Int%2E Air Ambulance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemistworks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cincotta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electro Medical Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guardian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HSS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JCIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lifetime care and support Authority of NSW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NSW CPAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimal Pharmacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perth CPAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmacy 777</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priceline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ResSleep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SBS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sleep GP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sleep MGT Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sleep for Health and Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TWCM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Buying_Group__c</picklist>
+        <values>
+            <fullName>ALH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APSS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amcal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bayside Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Benchmark Sleep Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blooms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLM Sleep Co%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAP Australia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAP Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAP Connect Australia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAP Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cardio Respiratory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Careflight Int%2E Air Ambulance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemistworks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cincotta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electro Medical Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guardian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HSS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JCIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lifetime care and support Authority of NSW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NSW CPAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimal Pharmacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perth CPAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmacy 777</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priceline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ResSleep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SBS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sleep GP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sleep MGT Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sleep for Health and Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TWCM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CPAP_Brand_Opt_In__c</picklist>
+        <values>
+            <fullName>Opt-In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opt-Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CPAP_Status__c</picklist>
+        <values>
+            <fullName>Purchaser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trialist</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Chemmart_star_rating__c</picklist>
+        <values>
+            <fullName>1 star</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 star</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 star</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 star</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 star</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EdenSleep_Brand_Opt_In__c</picklist>
+        <values>
+            <fullName>Opt-In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opt-Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ethnicity__c</picklist>
+        <values>
+            <fullName>Aboriginal%2FTorres Strait Islander</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>American Indian or Alaskan Native</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Black or African American</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caucasian or White</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Asian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Middle East %2F North African</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Native Hawaiian or Other Pacific Islander</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prefer not to mention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Asian %28Indian%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HST_Diagnostics_Level__c</picklist>
+        <values>
+            <fullName>Level 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 2 %26 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>How_Diagnosed__c</picklist>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sleep Lab</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MCS_Brand_Opt_In__c</picklist>
+        <values>
+            <fullName>Opt-In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opt-Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mask_Type_Used__c</picklist>
+        <values>
+            <fullName>Disposable Non Vented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disposable Vented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Vented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reusable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vented</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Month_of_Device_for_Treatment__c</picklist>
+        <values>
+            <fullName>April</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>August</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>December</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>February</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>January</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>July</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>June</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>March</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>May</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>October</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>September</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsure</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Online_Geo_Code_Source__c</picklist>
+        <values>
+            <fullName>Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use Find Nearby</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Oracle_Salesperson__c</picklist>
+        <values>
+            <fullName>AFF - Affiliates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inside Sales Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NSW - Northern%2FSouthern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NSW1 - Northern NSW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NSW2 - Southern NSW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NZ Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QLD1 - QLD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QLD2 - QLD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QLD3 - QLD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SA1 - SA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAS1 - TAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIC1 - VIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIC2 - VIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA1 - WA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA2 - WA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Preferred_clinic_for_follow_up__c</picklist>
+        <values>
+            <fullName>CPAP Australia %E2%80%93 Kogarah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAP Australia - Parramatta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAP Australia - Surrey Hills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ResSleep  - Miranda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ResSleep %E2%80%93 Bella Vista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ResSleep - Dee Why</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ResSleep - Mount Waverly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pricelist_Primary__c</picklist>
+        <values>
+            <fullName>AUS - ALH %26 HSS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Amber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Amethyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Aquamarine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Black Opal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Citrine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Dept of Health WA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Diagnostics RRP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Diamond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Emerald</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Genesis Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - HPV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Jade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Moonstone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - On Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Onyx</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Opal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - QHSDU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - QLD Sleep Disorders Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Quartz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - RC Diamond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - RC Jasper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - RC Quartz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - RC RRP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - ResSleep Franchisee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Rubellite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Ruby</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - SBS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Sapphire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Sleep RRP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Sunstone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Topaz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - Turquoise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUS - WASDRI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NZ - Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NZ - Diamond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NZ - EdenSleep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NZ - Emerald</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NZ - Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NZ - Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NZ - RC RRP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NZ - Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NZ - Sleep RRP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NZ - SleepGP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Diagnosis_Month__c</picklist>
+        <values>
+            <fullName>April</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>August</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>December</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>February</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>January</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>July</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>June</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>March</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>May</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>November</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>October</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>September</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Diagnosis_Year__c</picklist>
+        <values>
+            <fullName>1970</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1971</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1972</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1973</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1974</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1975</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1976</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1977</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1978</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1979</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1980</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1981</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1982</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1983</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1984</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1985</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1986</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1987</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1988</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1989</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1990</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1991</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1992</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1993</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1994</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1995</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1996</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1997</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1998</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2002</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2003</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2004</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2005</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2006</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2007</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2008</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2009</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2010</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2011</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2012</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2013</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2016</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2017</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2019</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Diagnosis__c</picklist>
+        <values>
+            <fullName>Central Sleep Apnoea %28CSA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chronic Obstructive Pulmonary Disease %28COPD%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I do not have a relevant medical diagnosis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mixed Apnoea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neuromuscular Disease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Obesity Hypoventilation Syndrome %28OHS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Obstructive Sleep Apnoea %28OSA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overlap Syndrome %28OSA %26 COPD%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prefer not to mention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restrictive Lung Disease %28e%2Eg%2E Chest wall disorders%2C interstitial lung disease%2C sarcoidosis%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAD__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_Diagnosis__c</picklist>
+        <values>
+            <fullName>All of the above</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Symptoms</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rental_Agreement_Status__c</picklist>
+        <values>
+            <fullName>Old Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ResMed_Brand_Opt_In__c</picklist>
+        <values>
+            <fullName>Opt-In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opt-Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ResMed_Friendly__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Decided</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ResSleep_Brand_Opt_In__c</picklist>
+        <values>
+            <fullName>Opt-In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opt-Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resupply_Opt_out__c</picklist>
+        <values>
+            <fullName>Approval %23%27s Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Managed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uncontactable - Address Discrepancy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Retail_Brand_Opt_In__c</picklist>
+        <values>
+            <fullName>Opt-In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opt-Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reward_option__c</picklist>
+        <values>
+            <fullName>Gift card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Movie ticket</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Scripting__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Sure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sleep_Remedy_Brand_Opt_In__c</picklist>
+        <values>
+            <fullName>Opt-In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opt-Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Source_System__c</picklist>
+        <values>
+            <fullName>AIRVIEWEXCHANGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COREPLUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MYOB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNKNOWN</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Member - Deceased</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Member - Enable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Member - General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Member - Terminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Member - Warranty</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subscription_Plans__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Title__c</picklist>
+        <values>
+            <fullName>Admin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAP Therapist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receptionist</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Charity non-profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charity profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Organisations</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Research Institute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_Of_Ward__c</picklist>
+        <values>
+            <fullName>Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICU ED</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Study_Interested__c</picklist>
+        <values>
+            <fullName>Focus groups %28attend a session with other device users to share thoughts and ideas%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interviews %28share your thoughts and ideas on products one-on-one%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New machine trials %28take home a new machine to test%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New mask trials %28take home a mask prototype to test%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online surveys%2Fquestionnaires %28share your thoughts and ideas through online forms%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usability testing %28attend a session to test how user friendly a mask%2F machine%2F software is%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Therapy_Prefered__c</picklist>
+        <values>
+            <fullName>Auto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixed</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No preference</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_retrieval_unit__c</picklist>
+        <values>
+            <fullName>Aircraft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ambulance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_wards__c</picklist>
+        <values>
+            <fullName>Burns Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cath Lab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemotherapy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coronary Care unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dialysis Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elective surgery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intensive Care Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neonatal intensive care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Obstetrics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oncology Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paediatrics Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Psychiatric ward</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rehabilitation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Value_Range__c</picklist>
+        <values>
+            <fullName>0 - 50K</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1%2E5M - 2%2E5M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100K - 250K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E5M - 3%2E5M%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>250K - 500K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500K - 800K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50K - 100K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>800K - 1%2E5M</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ventilators_in_use__c</picklist>
+        <values>
+            <fullName>Elisee 150</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Elisee 350</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stellar 150</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Year_of_Device_for_Treatment__c</picklist>
+        <values>
+            <fullName>1970</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1971</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1972</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1973</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1974</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1975</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1976</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1977</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1978</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1979</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1980</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1981</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1982</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1983</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1984</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1985</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1986</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1987</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1988</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1989</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1990</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1991</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1992</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1993</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1994</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1995</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1996</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1997</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1998</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2002</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2003</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2004</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2005</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2006</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2007</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2008</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2009</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2010</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2011</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2012</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2013</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2016</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2017</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2019</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>areaType__c</picklist>
+        <values>
+            <fullName>Metropolitan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metropolitan - Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional - Mobile</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>membershipSource__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

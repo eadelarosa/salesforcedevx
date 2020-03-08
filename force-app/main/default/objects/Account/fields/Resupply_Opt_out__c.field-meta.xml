@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resupply_Opt_out__c</fullName>
+    <description>Change request reference: COMMEXC-2055. Opened in 19-Nov-2019. Sprint 1 | 20/11 - 3/12. Fix Version - PI3 (SEP - NOV)</description>
+    <externalId>false</externalId>
+    <label>Resupply Opt-out</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Partner Managed</fullName>
+                <default>false</default>
+                <label>Partner Managed</label>
+            </value>
+            <value>
+                <fullName>Product Not Applicable</fullName>
+                <default>false</default>
+                <label>Product Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Uncontactable - Address Discrepancy</fullName>
+                <default>false</default>
+                <label>Uncontactable - Address Discrepancy</label>
+            </value>
+            <value>
+                <fullName>Approval #&#39;s Required</fullName>
+                <default>false</default>
+                <label>Approval #&#39;s Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

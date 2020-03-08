@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Online_Latitude__c</fullName>
+    <description>Sleep Outlet Latitude to be used on Store Locator on website</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sleep Outlet Latitude to be used on Store Locator on website</inlineHelpText>
+    <label>Online Latitude</label>
+    <precision>13</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

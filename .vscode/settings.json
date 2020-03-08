@@ -1,0 +1,14 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.sfdx": true
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#07360C",
+    "titleBar.activeBackground": "#0A4B10",
+    "titleBar.activeForeground": "#F0FDF1"
+  },
+  "salesforcedx-vscode-core.show-cli-success-msg": false,
+  "salesforcedx-vscode-core.retrieve-test-code-coverage": true
+}

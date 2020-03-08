@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_for_reward__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Contact who can receive movie ticket reward</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Contact who can receive reward, movie ticket or gift card</inlineHelpText>
+    <label>Contact for reward</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Contact.AccountId</field>
+            <operation>equals</operation>
+            <valueField>$Source.Id</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

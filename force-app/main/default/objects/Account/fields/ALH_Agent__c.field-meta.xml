@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALH_Agent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Identify customers who are ALH agents so they can easily be excluded from Silverpop mailings if required.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Is this an ALH agent?</inlineHelpText>
+    <label>ALH Agent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

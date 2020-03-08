@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Quality_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( Phone ) , 0, 30) + 
+IF(  ISPICKVAL( Oracle_Salesperson__c , &quot;&quot;),0, 20) + 
+IF( 
+OR( ISBLANK( ShippingStreet ) , ISBLANK( ShippingCity ) , ISBLANK( ShippingState ),  ISBLANK( ShippingPostalCode ),  ISBLANK( ShippingCountry ) ) 
+
+, 0, 50)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is an assessment of the quality of the data on this record.</inlineHelpText>
+    <label>Data Quality Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

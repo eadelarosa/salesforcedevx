@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Product Registration</relationshipLabel>
+        <relationshipName>Product_Registrations</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Extended_Warranty_Code__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>The unique security code that is supplied when an extended warranty is purchased.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Extended warranty unique security code</inlineHelpText>
+        <label>Extended Warranty Code</label>
+        <length>11</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Promotional_Code__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Promotional Code</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purchased_From__c</fullName>
+        <description>Text-based entry from SV Product Registration page. Only populated if ReferringPartner not found.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Text-based entry from SV Product Registration page. Only populated if ReferringPartner not found.</inlineHelpText>
+        <label>Other</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Serial_Number_Validation_Failed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Serial Number Validation Failed</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>referringPartner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Referring Partner</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>(1 AND (2 OR 3)) OR 4 OR 5 OR 6 OR 7</booleanFilter>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Partner, Accredited Partner, Partner - Sleep Lab</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Partner - Sleep Lab</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Accredited Partner, Partner - Sleep Lab, Inactive/closed</value>
+            </filterItems>
+            <filterItems>
+                <field>$Profile.Name</field>
+                <operation>equals</operation>
+                <value>System Administrator</value>
+            </filterItems>
+            <filterItems>
+                <field>$Profile.Name</field>
+                <operation>equals</operation>
+                <value>sleepvantage Manager, sleepvantage Super Consultant</value>
+            </filterItems>
+            <filterItems>
+                <field>$Profile.Name</field>
+                <operation>equals</operation>
+                <value>customers Profile</value>
+            </filterItems>
+            <filterItems>
+                <field>$Profile.Name</field>
+                <operation>equals</operation>
+                <value>ROC Integration</value>
+            </filterItems>
+            <infoMessage>The Referring Partner must be a partner type of Partner or Partner - Sleep Lab.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Product Referral</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>warrantyType__c</fullName>
+        <description>Standard if not a member. SV Warranty if user is SV Member (auto extension), Extended if a warranty was purchased or provided as a promo.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Standard if not a member. SV Warranty if user is SV Member (auto extension), Extended if a warranty was purchased or provided as a promo.</inlineHelpText>
+        <label>Warranty Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard Warranty</fullName>
+                    <default>false</default>
+                    <label>Standard Warranty</label>
+                </value>
+                <value>
+                    <fullName>SV Warranty</fullName>
+                    <default>false</default>
+                    <label>SV Warranty</label>
+                </value>
+                <value>
+                    <fullName>Extended Warranty</fullName>
+                    <default>false</default>
+                    <label>Extended Warranty</label>
+                </value>
+                <value>
+                    <fullName>Ex Rental</fullName>
+                    <default>false</default>
+                    <label>Ex Rental</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>

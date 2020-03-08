@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPAP_Brand_Transacted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether this customer has transacted with CPAP based on the invoices.</description>
+    <externalId>false</externalId>
+    <label>CPAP Brand Transacted</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Postal_Code_Must_be_Numeric</fullName>
+    <active>false</active>
+    <description>Postal Code Must be Numeric</description>
+    <errorConditionFormula>AND(
+LEN (BillingPostalCode) &gt; 0,
+NOT (ISNUMBER( BillingPostalCode))
+)</errorConditionFormula>
+    <errorDisplayField>BillingPostalCode</errorDisplayField>
+    <errorMessage>The Postal Code must be numeric.</errorMessage>
+</ValidationRule>

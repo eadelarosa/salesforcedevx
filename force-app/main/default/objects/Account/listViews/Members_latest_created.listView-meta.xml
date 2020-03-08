@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Members_latest_created</fullName>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>Status__c</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>Active_Website_User__c</columns>
+    <columns>membershipSource__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>IS_PERSON_ACCOUNT</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Members - latest created</label>
+</ListView>

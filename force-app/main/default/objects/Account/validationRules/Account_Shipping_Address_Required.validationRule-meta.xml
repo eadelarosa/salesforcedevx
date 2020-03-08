@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Shipping_Address_Required</fullName>
+    <active>false</active>
+    <description>Shipping address required</description>
+    <errorConditionFormula>AND(OR( ShippingStreet = NULL, ShippingCity = NULL, ShippingCountry = NULL),  $User.Alias != &#39;iserv&#39;, IsPersonAccount = false)</errorConditionFormula>
+    <errorMessage>Complete shipping address is required.</errorMessage>
+</ValidationRule>

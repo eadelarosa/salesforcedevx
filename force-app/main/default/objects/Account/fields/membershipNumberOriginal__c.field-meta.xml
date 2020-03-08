@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>membershipNumberOriginal__c</fullName>
+    <description>Membership Number migrated from the old SV system.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Membership Number migrated from the old SV system.</inlineHelpText>
+    <label>Membership Number (Original)</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

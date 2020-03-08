@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>File_Number__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Document File Number</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Document File Number/Membership number on the card. This number is unique, case insensitive. So another record with same number will not be permitted. Please search for the file number before creating new.</inlineHelpText>
+    <label>File Number</label>
+    <length>12</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

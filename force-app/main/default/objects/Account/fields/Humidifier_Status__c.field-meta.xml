@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Humidifier_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( ISBLANK( Humidifier_Registration__c ), IMAGE(&quot;/img/samples/flag_yellow.gif&quot; , &quot;/img/s.gif&quot;) + &#39; No Humidifier Selected&#39;,
+IF ( Humidifier_Registration__r.Product2.Id = &#39;-&#39; , IMAGE(&quot;/img/samples/flag_yellow.gif&quot; , &quot;/img/s.gif&quot;) + &#39; Product Other&#39;,
+IF ( ISBLANK(Humidifier_Registration__r.referringPartner__c ),
+IF ( ISBLANK( Humidifier_Registration__r.referringPartner__r.Name), IMAGE(&quot;/img/samples/flag_yellow.gif&quot; , &quot;/img/s.gif&quot;) + &#39; No Partner Selected&#39;, IMAGE(&quot;/img/samples/flag_yellow.gif&quot; , &quot;/img/s.gif&quot;) + &#39; Partner Other&#39; ),
+
+IF (Humidifier_Registration__r.referringPartner__r.Allow_as_Purchase_From_on_SV_web__c , IMAGE(&quot;/img/samples/flag_green.gif&quot; , &quot;/img/s.gif&quot;) + &#39; Valid Partner&#39; ,IMAGE(&quot;/img/samples/flag_red.gif&quot; , &quot;/img/s.gif&quot;) + &#39; INVALID PURCHASE PARTNER&#39;) ) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Humidifier Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

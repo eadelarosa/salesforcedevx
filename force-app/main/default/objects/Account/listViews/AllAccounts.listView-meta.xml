@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllAccounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Status__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>isActive__c</columns>
+    <columns>isWebEnabled__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>IS_PERSON_ACCOUNT</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>isActive__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>All Accounts</label>
+</ListView>

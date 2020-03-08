@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_DVA_Members</fullName>
+    <columns>PersonEmail_SPE__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Government_Agency__c</columns>
+    <columns>Card_Type__c</columns>
+    <columns>File_Number__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>Date_DVA_Member_Details_Recorded__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>PC_FIRST_NAME</columns>
+    <columns>PC_LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Government_Agency__c</field>
+        <operation>equals</operation>
+        <value>DVA - Australia</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>PersonAccount.Member,PersonAccount.PersonAccount</value>
+    </filters>
+    <label>DVA Members</label>
+</ListView>

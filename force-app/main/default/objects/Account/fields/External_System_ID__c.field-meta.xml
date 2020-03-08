@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_System_ID__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>A unique identifier for a foreign record sitting in Salesforce CRM. This ID should be used by external client app when querying or upserting record in SFDC. This ID is also searchable through the sidebar search facility.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>true</externalId>
+    <label>External System ID</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

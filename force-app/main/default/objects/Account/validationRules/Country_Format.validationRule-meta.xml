@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Country_Format</fullName>
+    <active>false</active>
+    <description>Country must be Australia or New Zealand</description>
+    <errorConditionFormula>AND(
+LEN(BillingCountry) &gt; 0,
+NOT(CONTAINS(&quot;Australia|australia|AUS|aus|New Zealand|new zealand|nz|NZ|AUSTRALIA|NEW ZEALAND&quot;,BillingCountry )),
+NOT(Contains($User.Alias, &quot;iserv&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>BillingCountry</errorDisplayField>
+    <errorMessage>Country must be Australia or New Zealand</errorMessage>
+</ValidationRule>

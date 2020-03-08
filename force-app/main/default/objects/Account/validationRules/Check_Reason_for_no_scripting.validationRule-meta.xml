@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Reason_for_no_scripting</fullName>
+    <active>true</active>
+    <description>Ensures Reason for no scripting is not blank if &#39;No&#39; is selected</description>
+    <errorConditionFormula>TEXT( Scripting__c )  = &#39;No&#39; &amp;&amp; ISBLANK(  Reason_for_not_scripting__c )</errorConditionFormula>
+    <errorDisplayField>Reason_for_not_scripting__c</errorDisplayField>
+    <errorMessage>Please enter reason for no scripting</errorMessage>
+</ValidationRule>

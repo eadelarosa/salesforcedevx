@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Competitor_Mask</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>sv_Competitor Mask</shortDescription>
+        <value>Other\-Competitor\-Masks \(MASKS\)\-Unknown\-\-TBC\-0184</value>
+    </labels>
+    <labels>
+        <fullName>RMD_Enable_Email_Notification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RMD_Enable_Email_Notification</shortDescription>
+        <value>Y</value>
+    </labels>
+    <labels>
+        <fullName>SV_Account_Source</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Account_Source</shortDescription>
+        <value>Online</value>
+    </labels>
+    <labels>
+        <fullName>SV_Account_Web_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Account_Web_Status</shortDescription>
+        <value>Purchaser</value>
+    </labels>
+    <labels>
+        <fullName>SV_Asset_Default_Quantity</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Asset_Default_Quantity</shortDescription>
+        <value>1</value>
+    </labels>
+    <labels>
+        <fullName>SV_Asset_Default_Warranty_Type</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Asset_Default_Warranty_Type</shortDescription>
+        <value>SV Warranty</value>
+    </labels>
+    <labels>
+        <fullName>SV_Asset_Extended_Warranty_Type</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Asset_Extended_Warranty_Type</shortDescription>
+        <value>Extended Warranty</value>
+    </labels>
+    <labels>
+        <fullName>SV_Asset_Warranty_Type_Other</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Asset_Warranty_Type_Other</shortDescription>
+        <value>Other</value>
+    </labels>
+    <labels>
+        <fullName>SV_Email_Char_Limit_Msg</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Email_Char_Limit_Msg</shortDescription>
+        <value>Email address cannot be more than 80 characters length.</value>
+    </labels>
+    <labels>
+        <fullName>SV_Error_Processing_Registration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV Error Processing Registration</shortDescription>
+        <value>Sorry, we are unable to process your registration. Kindly retry registration or contact our customer care via email or phone number below.</value>
+    </labels>
+    <labels>
+        <fullName>SV_Exception_Email_Body</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV Exception Email Body</shortDescription>
+        <value>Hi Salesforce Admin, kindly forward this email to Salesforce Developer to investigate root cause.</value>
+    </labels>
+    <labels>
+        <fullName>SV_Exception_Email_Subject</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Exception_Email_Subject</shortDescription>
+        <value>SFDC SleepVantage Site, Unexpected Error.</value>
+    </labels>
+    <labels>
+        <fullName>SV_File_Size_Limit_Msg</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_File_Size_Limit_Msg</shortDescription>
+        <value>Maximum file size to upload cannot exceed 10 MB.</value>
+    </labels>
+    <labels>
+        <fullName>SV_Invalid_Date_of_Birth</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV Invalid Date of Birth</shortDescription>
+        <value>Please enter a valid Date of Birth.</value>
+    </labels>
+    <labels>
+        <fullName>SV_Invalid_Email_Domain_Message</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Invalid_Email_Domain_Message</shortDescription>
+        <value>The domain name is not a valid domain. Please register with valid domain Email address.</value>
+    </labels>
+    <labels>
+        <fullName>SV_Invalid_Purchase_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV Invalid Purchase Date</shortDescription>
+        <value>Please enter a valid Purchase Date.</value>
+    </labels>
+    <labels>
+        <fullName>SV_Missing_Promotional_Code_Selection</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Missing_Promotional_Code_Selection</shortDescription>
+        <value>Please choose either Yes or No for the question.</value>
+    </labels>
+    <labels>
+        <fullName>SV_Missing_Promotional_Code_Value</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Missing_Promotional_Code_Value</shortDescription>
+        <value>Please enter Promotional Code.</value>
+    </labels>
+    <labels>
+        <fullName>SV_Missing_Required_Fields</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV Missing Required Fields</shortDescription>
+        <value>One or more required field(s) does not have a value.</value>
+    </labels>
+    <labels>
+        <fullName>SV_ReCaptcha_Endpoint</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_ReCaptcha_Endpoint</shortDescription>
+        <value>https://www.google.com/recaptcha/api/siteverify</value>
+    </labels>
+    <labels>
+        <fullName>SV_ReCaptcha_Key</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_ReCaptcha_Key</shortDescription>
+        <value>6LeFbqgUAAAAACgxbCgJxuXvAbub8TKYpDHn6nbl</value>
+    </labels>
+    <labels>
+        <fullName>SV_ReCaptcha_SecretKey</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_ReCaptcha_SecretKey</shortDescription>
+        <value>6LeFbqgUAAAAAAeo4cdEBJio4waFP6EGOXBoPpK_</value>
+    </labels>
+    <labels>
+        <fullName>SV_Serial_Number_Not_Valid_Msg</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Serial_Number_Not_Valid_Msg</shortDescription>
+        <value>The Serial Number you entered is not valid, however, you can still complete the registration process.</value>
+    </labels>
+    <labels>
+        <fullName>SV_Serial_Number_Valid_Msg</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Serial_Number_Valid_Msg</shortDescription>
+        <value>Serial number found successfully.</value>
+    </labels>
+    <labels>
+        <fullName>SV_User_Exist_With_Entered_Email_Msg</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_User_Exist_With_Entered_Email_Msg</shortDescription>
+        <value>The entered email already exists.</value>
+    </labels>
+    <labels>
+        <fullName>SV_Valid_Email_Domain_List</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Valid_Email_Domain_List</shortDescription>
+        <value>bigpond,gmail,hotmail,yahoo,optusnet,live,iinet,tpg,westnet,outlook,internode,iprimus,ozemail,icloud,me,aapt,dodo,y7mail,xtra,adam,netspace,msn,activ8,exemail,grapevine,mac,aol,telstra,skymesh,ihug,tadaust,ymail,health,wn,hotkey,det,edumail,optushome,ncable,virginbroadband,pacific,optus,rocketmail,netspeed,aanet,eq,senet,qq,chariot,three,fastmail,people,powerup,smartchat,defence,amnet,alphalink,netscape,chubb,vixeninternet,howden,adeptbusinessadvisors,didasko,poulosbros,space,satlink,akshady,frontrowmedia.com.au,ziligent.com,la1.com.au</value>
+    </labels>
+    <labels>
+        <fullName>SV_Valid_File_Format_Extensions</fullName>
+        <categories>sleepVantage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV_Valid_File_Format_Extensions</shortDescription>
+        <value>&quot;.jpg&quot;, &quot;.jpeg&quot;, &quot;.xls&quot;, &quot;.csv&quot;, &quot;.png&quot;, &quot;.txt&quot;, &quot;.doc&quot;,&quot;.docx&quot;,&quot;.xlsx&quot;,&quot;.pdf&quot;,&quot;.html&quot;</value>
+    </labels>
+    <labels>
+        <fullName>SV_Warranty_Code_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SV Warranty Code Error</shortDescription>
+        <value>Sorry, the Extended Warranty Code is already in use.</value>
+    </labels>
+</CustomLabels>

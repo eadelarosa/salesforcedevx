@@ -1,0 +1,1233 @@
+<apex:page sidebar="false" showheader="false" controller="RegisterYourProductController" doctype="html-5.0" standardstylesheets="false" id="registrationPage">
+    <!--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">-->
+    <html>
+    <head>
+        <title>Register Your Product</title>
+		<meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=yes" />
+        <meta http-equiv="cleartype" content="on" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="keywords" content="" />
+        <meta name="title" content="Register Your Product" />
+        <meta name="description" content="" />
+        <meta name="google" value="notranslate" />
+        <!--<link rel="shortcut icon" href="https://www.sleepvantage.com.au/etc/designs/sleepvantage/images/favicon.ico"/>-->
+        <link rel="shortcut icon" href="{!URLFOR($Resource.RegisterYourProductAssets, 'images/favicon.ico')}" />
+        <!--<apex:stylesheet value="{!URLFOR($Resource.bootstrapgrid)}"/>-->
+        <apex:stylesheet value="{!URLFOR($Resource.bootstrapCSS)}" />
+
+        <apex:stylesheet value="{!URLFOR($Resource.RegisterYourProductAssets, 'jqueryui/jquery-ui.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.RegisterYourProductAssets, 'styles/clientlibs(1).css')}" />
+        <apex:includescript value="{!URLFOR($Resource.RegisterYourProductAssets, 'jqueryui/jquery-1.12.4.min.js')}" />
+        <apex:includescript value="{!URLFOR($Resource.RegisterYourProductAssets, 'jqueryui/jquery-ui.js')}" />
+        <apex:includescript value="{!URLFOR($Resource.RegisterYourProductAssets, 'jqueryui/vendor.js')}" />
+
+        <!--<apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"/>
+        <apex:includeScript value="https://ajax.microsoft.com/ajax/jquery.validate/1.6/jquery.validate.min.js"/>-->
+        <style>
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #ffffff;
+                text-align: center;
+            }
+
+
+            .sectionHeader {
+                background-color: #D1E7F3;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+                color: #4D9CCC;
+                font-size: 20px;
+                height: 50px;
+                opacity: 1.2;
+                padding-top: 10px;
+            }
+
+            .footer {
+                background-color: #424243;
+                margin-top: 30px;
+                text-align: center;
+                color: #ffffff;
+                font-size: 16px;
+                padding-top: 20px;
+            }
+
+
+            label {
+                display: block;
+                padding-left: 15px;
+                text-indent: -15px;
+            }
+
+            .checkbox {
+                width: 20px;
+                height: 20px;
+                padding: 0;
+                margin: 0;
+                vertical-align: bottom;
+                position: relative;
+                top: -1px;
+                *overflow: hidden;
+            }
+
+            .cal-icon {
+                width: 39px;
+            }
+
+            .logo-align {
+                margin: 2% 6%;
+            }
+
+            label.error {
+                color: red;
+                text-align: right;
+            }
+
+            .error-placeholder {
+                color: red;
+                margin: 1em 0 0 0;
+            }
+
+            .form-control.error {
+                border-color: red;
+            }
+
+            .btn-primary {
+                background-color: #1788C3;
+                border-color: #1788C3;
+                width: 203px;
+                height: 53px;
+            }
+
+            html {
+                font-size: 100%;
+            }
+
+            body {
+                font-size: 100%;
+            }
+
+            @media (max-width: 576px) {
+                .mg-top {
+                    margin: 10px 0px;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 992px) {
+
+                body > div:nth-of-type(2) > img.img-fluid {
+                    height: 200px;
+                }
+
+                body > div:nth-of-type(2) > p:nth-of-type(1) {
+                    margin-bottom: 0;
+                }
+            }
+
+            @media (min-width: 992px) and (max-width: 1200px) {
+
+                body > div:nth-of-type(2) > img.img-fluid {
+                    height: 200px;
+                }
+
+                body > div:nth-of-type(2) > p:nth-of-type(1) {
+                    margin-bottom: 0;
+                }
+            }
+
+            @media (min-width: 320px) and (max-width: 544px) {
+
+                .centered {
+                    width: 70%;
+                }
+            }
+            
+            .custPopup{
+                background-color: white;                          
+                border-radius:3px;
+                z-index: 9999;
+                left: 50%;
+                padding:10px;
+                position: absolute;
+            	/* These are the 3 css properties you will need to change so the popup
+                displays in the center of the screen. First set the width. Then set
+                margin-left to negative half of what the width is. You can add
+                the height property for a fixed size pop up if you want.*/
+                width: auto;
+                margin-left: -200px;
+            	margin-right: -100px;
+                top:100px;
+            	height: auto;
+            }
+            
+            .popupBackground{
+                background-color:black;
+                opacity: 0.20;
+                filter: alpha(opacity = 20);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 9998;
+            }
+            
+            .header{
+                 color:#CC0033;
+                font-size:19px;            
+            }
+            
+            .ErrorCSSClass {color:Red !important;  }
+            
+            .required{color : red; }
+        </style>
+    </head>
+    <body>
+        <div class="logo-align clearfix">
+            <img src="{!URLFOR($Resource.SVResMedLogo)}" alt="SVResMedLogo" /><!--style="width: 75px;height: 77px;float:left;"-->
+            <img src="{!URLFOR($Resource.RegisterYourProductAssets, '/images/logo-desktop.png')}" style="float:right;padding-top: 20px;" alt="Sleepvantage" />
+        </div>
+        <div class="hidden-sm-down" style="position:relative">
+            <img src="{!URLFOR($Resource.SVDesktopHeaderLogo)}" class="img-fluid"/>
+            <div class="centered ">
+                <h4>Become a Sleepvantage Member</h4>
+                <h6>Register Your Product</h6>
+                <p style="font-size:14px;">If you have purchased your ResMed product from our distributors within Australia or New Zealand, you can become a Sleepvantage member and access exclusive membership benefits by registering your product.To register your device and mask, please fill the form below</p>
+                <p style="font-size:15px;">Experiencing issues registering online? Please copy and email your completed form to<br /><a style="color:#00f;" href="mailto:info@sleepvantage.com.au">info@sleepvantage.com.au</a></p>
+            </div>
+        </div>
+        <apex:outputpanel rendered="{!NOT(isRegistered)}">
+            <!---->
+
+            <div class="hidden-md-up" style="position:relative">
+                <img src="{!URLFOR($Resource.SVMobileHeaderLogo)}" class="img-fluid" style="height: fit-content;" />
+                <div class="centered ">
+                    <h4>Become a Sleepvantage Member</h4>
+                    <h6>Register Your Product</h6>
+                    <p style="font-size:12px;">If you have purchased your ResMed product from our distributors within Australia or New Zealand, you can become a Sleepvantage member and access exclusive membership benefits by registering your product.To register your device and mask, please fill the form below</p>
+                    <p style="font-size:12px;">Experiencing issues registering online? Please copy and email your completed form to<br /><a style="color:#00f;" href="mailto:info@sleepvantage.com.au">info@sleepvantage.com.au</a></p>
+
+                </div>
+            </div>
+            <!-- 17-Jul-2018 FT: Section to display message -->
+            <apex:outputPanel id="msgs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <apex:messages styleClass="error-placeholder"></apex:messages>
+                        </div>
+                    </div>
+                </div>
+            </apex:outputPanel>
+            
+            <div class="container">
+                <div class="container">
+                    <apex:form id="registeryourproductForm">
+                        <br/>
+                        <apex:actionRegion >
+                        <apex:outputPanel style="{!infoSection}">
+                            
+                            <!-- Added by Ajit Surana - 11/19/2019 -->
+                            <div class="col-md-6 col-sm-12 col-xs-12 mg-top">
+                                <div>Do you have a promotional code? <span class="required">* </span> </div>
+                                <apex:selectList size="1" onchange="selPromotionalCodeVal(this.value)" html-autocomplete="off" value="{!Is_Using_Device_For_Treament}" style="Width:100%;padding: 0.344rem .75rem;" styleClass="form-control"  id="Is_Using_Device_For_Treament">  
+                                    <apex:selectOptions value="{!PromotionalCodeOptions}" />
+                                </apex:selectList>
+                            </div>
+                            
+                            <apex:outputPanel id="ErrDiv1">
+                                <apex:outputPanel >
+                                    <div class="col-md-6 col-sm-12 col-xs-12 mg-top">
+                                        <div class="ErrorCSSClass"> {!Err_Use_Promotional_Code}</div>
+                                    </div>
+                                </apex:outputPanel>
+                            </apex:outputPanel>
+                            
+                            <apex:outputPanel id="Promotional_Code_Pannel">
+                                <apex:outputPanel rendered="{!Promotional_Code_Pannel==true}">
+                                    <div class="col-md-6 col-sm-12 col-xs-12 mg-top">
+                                        <div>
+                                            <apex:inputtext html-placeholder="Promotional Code" style="Width:100%" value="{!devicePromotionalCode}" styleclass="form-control" id="devicepromotionalcode" maxlength="30"/>
+                                        </div>
+                                    </div>
+                                </apex:outputPanel> 
+                            </apex:outputPanel> 
+                            <apex:outputPanel id="ErrDiv2">
+                                <apex:outputPanel >
+                                    <div class="col-md-6 col-sm-12 col-xs-12 mg-top">
+                                        <div class="ErrorCSSClass"> {!Err_Promotional_Code_Str}</div>
+                                    </div>
+                                </apex:outputPanel>
+                            </apex:outputPanel>
+                            
+                            <br/>
+                            <!-- Code changes ends here -->
+                            
+                            <div class="col-md-6 col-sm-12 col-xs-12 mg-top">
+                                <div> Do you have the membership reference number to continue with? </div><br/>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div>
+                                            <apex:inputcheckbox value="{!isExistingUser}" styleclass="checkbox" id="existingUserCheck" onclick="loadFormForExistingUser();"/> Yes &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <apex:inputcheckbox value="{!isNewUser}" styleclass="checkbox" id="newUserCheck" onclick="loadFormForNewUser(); return false;"/> No
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </apex:outputPanel>
+                        
+                        <apex:actionFunction name="displayNewForm" action="{!displayFormForNewUser}" status="status"/>
+                        <apex:actionFunction name="displayFormWithContactDetails" action="{!loadFormForExistingUser}" status="status"/>
+                            
+						<apex:actionFunction name="showMaskNameValues" action="{!showMaskNameMethod}" reRender="maskNamePanel" status="status" >
+                        	<apex:param id="deviceName" name="deviceName" value="" />
+						</apex:actionFunction>
+                            
+                        <apex:actionFunction name="showMaskSizeValues" action="{!showMaskSizeMethod}" reRender="maskSizePanel" status="status">
+                        	<apex:param id="maskName" name="maskName" value="" />
+                            <apex:param id="selDeviceName" name="selDeviceName" value="" />
+                        </apex:actionFunction>
+						
+						<apex:actionFunction name="ajexShowPromotionalCode" action="{!renderPromotionalCodeField}" reRender="Promotional_Code_Pannel,ErrDiv1, ErrDiv2" status="myStatus4">
+                            <apex:param id="promoCodeValue" name="promoCodeValue" value="" />  
+						</apex:actionFunction>
+						
+						<apex:actionFunction name="navigateToBackScreen" action="{!goPrevious}"/>
+                                
+						<apex:actionStatus id="status">
+                             <apex:facet name="start">
+                                 <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 1000; background-color: grey;">
+                                 &nbsp;
+                                  </div>
+                                 <div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 15% 50%">
+                                    <div style="display: inline-block; padding: 2px; background-color: #fff; width: 125px;margin: 15% 50%">
+                                        <img src="/img/loading.gif" style="float: left; margin: 8px;" />
+                                        <span style="display: inline-block; padding: 10px 0px;">Please Wait...</span>
+                                    </div>
+                                </div>
+                             </apex:facet>
+                         </apex:actionStatus>                        
+                        <apex:outputPanel id="membershipDataSection" rendered="{!(isExistingUser)}" style="{!filterSection}">
+                            <div> Please enter the Last name and Membership number -  </div><br/>
+                            <div class="row">
+                                <div class="col-md-5 mg-top">
+                                    <div>Last Name*</div>
+                                    <apex:inputtext html-placeholder="Last Name" style="Width:100%" value="{!lastName}" styleclass="form-control" id="existingUserLName" maxlength="80">
+                                    </apex:inputtext>
+                                </div>
+                                <div class="col-md-5 mg-top">
+                                    <div>Membership Number*</div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <apex:inputtext html-placeholder="Membership Number" style="Width:100%" value="{!memShipNo}" styleclass="form-control" id="existingUserMShip" maxlength="6">
+                                                <!--<apex:actionSupport event="onchange" action="{!AccountPopulated}" rerender="registeryourproductForm" oncomplete="onloadCallback();"/>-->
+                                            </apex:inputtext>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<br/>
+							<br/>
+                            
+                            <div id="register">
+                                <apex:commandButton id="BackBtn" action="{!goPrevious}" value="Back" styleclass="btn btn-primary"/> &nbsp;
+                                <apex:commandbutton id="cmdShowDetails" value="Show Details" onclick="validateInputData();" action="{!AccountPopulated}" styleclass="btn btn-primary" oncomplete="onloadCallback();" rerender="registeryourproductForm" status="status" />
+                            </div>
+                        </apex:outputPanel>
+                        </apex:actionRegion>
+                        
+                        <apex:outputPanel id="contactSection" style="{!showFormString}">
+                        	<div class="sectionHeader ">
+                                Your Contact Details
+                            </div>
+                            <br />
+                            
+                            <div>Full Name</div>
+                            <div class="row">
+                                <div class="col-md-2 mg-top">
+                                    <apex:selectlist size="1" value="{!title}" style="Width:100%;padding: 0.344rem .75rem;" styleclass="form-control" id="titles" disabled="{!disableConData}">
+                                        <apex:selectoptions value="{!titles}" />
+                                    </apex:selectlist>
+                                </div>
+                                <div class="col-md-5 mg-top">
+                                    <apex:inputtext html-placeholder="First Name" style="Width:100%;" value="{!firstname}" styleclass="form-control" id="firstname" maxlength="40" disabled="{!disableConData}"/>
+                                </div>
+                                <div class="col-md-5 mg-top">
+                                    <apex:inputtext html-placeholder="Last Name" style="Width:100%" value="{!lastname}" styleclass="form-control" id="lastname" maxlength="80" disabled="{!disableConData}"/>
+                                </div>
+                                
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-xs-12 mg-top">
+                                    <div>Email</div>
+                                    <apex:inputtext html-placeholder="Email" style="Width:100%" value="{!email}" styleclass="form-control" id="email" maxlength="80" disabled="{!disableConData}"/>
+                                    
+                                    <apex:outputPanel rendered="{!disableConData}" id="ChangeEmailPanel">
+                                
+                                        <div class="row">
+                                            <apex:actionRegion >
+                                                <div class="editButton">
+                                                    <apex:commandLink value="Click here to update Email" rerender="tstpopup" action="{!showPopup}" style="Width:100%;padding: 0.344rem .75rem;" status="status"/>
+                                                </div>
+                                            </apex:actionRegion>
+                                        </div>
+                                    </apex:outputPanel>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div>Gender</div>
+                                    <apex:selectlist size="1" value="{!gender}" style="width: 100%;padding: 0.344rem .75rem;" styleclass="form-control" id="gender">
+                                        <apex:selectoptions value="{!genders}" />
+                                    </apex:selectlist>
+                                </div>
+                            </div>
+							<br />
+    						
+                            <apex:actionFunction name="hideEditEmailModalBox" action="{!hidePopUp}"/>
+                            <apex:actionFunction name="updateNewEmail" action="{!processEmailChangeRequest}"/>
+                            
+                            <div id="editEmailPanel"> 
+                                <apex:outputPanel id="tstpopup">
+                                    <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}"  id="popUpBckDivId"/>
+                                    <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}" id="popUpDivId">
+                                        
+                                        <div class = "modal-header">
+                                            <h3 class="modal-title" style="text-align: center;">Enter a new Email address</h3>
+                                        </div>
+                                        
+                                        <div class="modal-body">
+                                            
+                                            <apex:outputPanel id="emailRequestErrMsg">
+                                                <apex:repeat id="emailRetreiveRequestIdErr" value="{!emailRetreiveRequestIdErrMessage}" var="err" >
+                                                    <div class="form-group">
+                                                        <apex:outputText style="color:red" value="{!err}" id="testingError"/> <br/>
+                                                    </div>
+                                                </apex:repeat> 
+                                            </apex:outputPanel>
+                                            <apex:inputtext html-placeholder="New Email" style="Width:100%" value="{!newEmail}" styleclass="form-control" id="newEmail" maxlength="80"/>
+                                            <br/>
+                                            
+                                        </div>
+                                        <apex:actionRegion >
+                                            <apex:commandButton id="backButton" onclick="closeEmailChangeRequest();" value="Cancel" styleclass="btn btn-primary" rerender="tstpopup"/> &nbsp;
+                                            <apex:commandButton id="emailChangeButton" value="Update" styleclass="btn btn-primary" onclick=" this.disabled = true;this.value='Processing...'; document.getElementById('{!$Component.backButton}').disabled = true; submitEmailChangeRequest();"  oncomplete="{!IF(showError,'emailDummy()', 'emailChangeRequestComplete()')}" reRender="tstpopup, emailRetreiveRequestIdErr, emailRequestErrMsg" status="status"/>
+                                        </apex:actionRegion>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-xs-12 mg-top">
+                                    <div>Home Number</div>
+                                    <div>
+                                        <apex:inputtext html-placeholder="Home Number" style="Width:100%" value="{!phone}" styleclass="form-control" id="homenumber" maxlength="10"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div>Mobile Number</div>
+                                    <div>
+                                        <apex:inputtext html-placeholder="Mobile Number" style="Width:100%" value="{!MobileNumber}" styleclass="form-control" id="mobilenumber" maxlength="10"/>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <br />
+    
+    
+                            <div>Address</div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <apex:inputtext html-placeholder="Address" style="Width:100%" value="{!streetAddress}" styleclass="form-control" id="streetaddress" maxlength="255"/>
+                                </div>
+                            </div>
+                            <br />
+    
+                            <div class="row">
+                                <div class="col-md-6 mg-top">
+                                    <div>Suburb</div>
+                                    <div>
+                                        <apex:inputtext html-placeholder="Suburb" style="Width:100%" value="{!suburb}" styleclass="form-control" id="suburb" maxlength="40" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>State <apex:actionStatus id="stateStatus" startText="(updating...)" stopText=""/></div>
+                                    <div>
+                                        <apex:actionRegion >
+    
+                                            <apex:selectlist size="1" style="width: 100%;padding: 0.344rem .75rem;" value="{!state}" styleclass="form-control" id="state">
+                                                <apex:actionSupport event="onchange" rerender="country" action="{!updateCountryPicklist}" status="countryStatus"/>
+                                                <apex:selectoptions value="{!states}" />
+                                            </apex:selectlist>
+    
+                                        </apex:actionRegion>
+    
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <br />
+    
+                            <div class="row">
+                                <div class="col-md-6 mg-top">
+                                    <div>Postcode</div>
+                                    <div>
+                                        <apex:inputtext html-placeholder="Postcode" style="Width:100%" value="{!postCode}" styleclass="form-control" id="postcode" maxlength="4"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>Country <apex:actionStatus id="countryStatus" startText="(updating...)" stopText=""/></div> 
+                                    <div>
+                                        <apex:actionRegion >
+                                            <apex:selectlist size="1" value="{!country}" style="width: 100%;padding: 0.344rem .75rem;" styleclass="form-control" id="country">
+                                                <apex:actionSupport event="onchange" rerender="state" action="{!updateStatePicklist}" status="stateStatus"/>
+                                                <apex:selectoptions value="{!countries}" />
+                                            </apex:selectlist>
+                                        </apex:actionRegion>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div>Date Of Birth</div>
+                            <div class="row">
+    
+                                <div class="col-md-4 mg-top">
+                                    <div>
+                                        <apex:selectlist size="1" value="{!day}" style="width:100%;padding: 0.344rem .75rem;" styleclass="{!'form-control ' + if(isDateOfBirthError, 'error', '')}" id="day" disabled="{!disableConData}">
+                                            <apex:selectoptions value="{!days}" />
+                                        </apex:selectlist>
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4 mg-top">
+                                    <div>
+                                        <apex:selectlist size="1" value="{!month}" style="width:100%;padding: 0.344rem .75rem;" styleclass="{!'form-control ' + if(isDateOfBirthError, 'error', '')}" id="month" disabled="{!disableConData}">
+                                            <apex:selectoptions value="{!months}" />
+                                        </apex:selectlist>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mg-top">
+                                    <div>
+                                        <apex:selectlist size="1" value="{!year}" style="width:100%;padding: 0.344rem .75rem;" styleclass="{!'form-control ' + if(isDateOfBirthError, 'error', '')}" id="year" disabled="{!disableConData}">
+                                            <apex:selectoptions value="{!years}" />
+                                        </apex:selectlist>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+    
+                            <div class="sectionHeader">
+                                Your Device Details
+                            </div>
+    
+                            <div>Please select a ResMed Device</div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <apex:selectlist size="1" value="{!resmedDeviceName}" html-placeholder="Select product" style="width:100%;padding: 0.344rem .75rem;" styleclass="form-control" id="resmeddevices" onChange="onDeviceNameChange(this.value);">
+                                        <apex:selectoptions value="{!resmeddevices}" />
+                                    </apex:selectlist>
+                                </div>
+                            </div>
+    
+                            <br />
+    
+                            <div class="row">
+                                <apex:actionRegion >
+                                    <apex:actionFunction action="{!callWS}" name="callWSJS" status="wsStatus" reRender="statuses, msgs" oncomplete="window.scrollTo(0,0);"/>
+                                    <div class="col-md-6 col-sm-12 col-xs-12 mg-top">
+                                        <div>Serial Number</div>
+                                        <div>
+                                            <apex:inputtext html-placeholder="Serial Number" style="Width:100%" value="{!serialNumber}" styleclass="form-control" id="deviceserialNumber" maxlength="12" onchange="checkSerialNumberLength();"/>
+                                        </div>
+                                    </div>
+                                </apex:actionRegion>
+                                
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div>Extended Warranty Code (If Applicable)</div>
+                                    <div>
+                                        <apex:inputtext html-placeholder="Extended Warranty Code" style="Width:100%" value="{!extendedWarrantySecurityCode}" styleclass="{!'form-control ' +if(isExtendedWarranyCodeError, 'error', '') }" id="devicewarrantycode" maxlength="11"/>
+                                    </div>
+                                </div>
+                                
+                                <!--<div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div>Device Purchased From</div>
+                                    <div>
+                                        <apex:inputtext list="{!PurchaseFromString}" value="{!devicePurchasedFrom}" style="Width:100%" styleclass="form-control" id="devicepurchasedfrom" html-placeholder="Type Here" maxlength="80"/>
+                                        <!--<apex:selectList size="1" value="{!devicePurchasedFrom}" style="width:100%;padding: 0.344rem .75rem;" styleClass="form-control" id="devicepurchasedfrom">
+                                            <apex:selectOptions value="{!PurchaseFromString}"/>
+                                        </apex:selectList>
+                                    </div>
+                                </div>-->
+                            </div>
+                            <br />
+                            
+                            <apex:outputPanel id="statuses">
+                                <apex:actionStatus id="wsStatus" startText="Validating Serial Number. Please wait...!!!!" startStyle="color: red;"/>
+                            </apex:outputPanel>
+    						
+                            <div>Device Purchased From</div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <apex:inputtext list="{!PurchaseFromString}" value="{!devicePurchasedFrom}" style="Width:100%" styleclass="form-control" id="devicepurchasedfrom" html-placeholder="Type Here" maxlength="80"/>
+                                </div>
+                            </div>
+                            
+                            <!--<div class="row">
+                                
+                                
+                                
+                               <div class="col-md-6 col-sm-12 col-xs-12 mg-top">
+                                    <div>Promotional Code (If Applicable)</div>
+                                    <div>
+                                        <apex:inputtext html-placeholder="Promotional Code" style="Width:100%" value="{!devicePromotionalCode}" styleclass="form-control" id="devicepromotionalcode" maxlength="18"/>
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div>Extended Warranty Code (If Applicable)</div>
+                                    <div>
+                                        <apex:inputtext html-placeholder="Extended Warranty Code" style="Width:100%" value="{!extendedWarrantySecurityCode}" styleclass="{!'form-control ' +if(isExtendedWarranyCodeError, 'error', '') }" id="devicewarrantycode" maxlength="11"/>
+                                    </div>
+                                </div> 
+                            </div>-->
+                            <br />
+                            <br />
+    
+                            <div class="sectionHeader">
+                                Your Mask Details
+                            </div>
+    						
+                            <apex:outputPanel Id="maskNamePanel">
+                                <div>Please select a ResMed Mask</div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <apex:selectlist size="1" value="{!resmedMaskName}" html-placeholder="Select product" style="width:100%;padding: 0.344rem .75rem;" styleclass="form-control" id="resmedmasks" onChange="onMaskNameChange(this.value);">
+                                            <apex:selectoptions value="{!maskNameOptions}" />
+                                        </apex:selectlist>
+                                    </div>
+                                </div>
+        					    <br />
+    						</apex:outputPanel>
+                            
+                            <apex:outputPanel Id="maskSizePanel">
+                                <div>Mask Size</div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <apex:selectlist size="1" value="{!maskSize}" html-placeholder="Select Mask Size" style="width:100%;padding: 0.344rem .75rem;" styleclass="form-control" id="maskSize">
+                                            <apex:selectoptions value="{!maskSizeOptions}" />
+                                        </apex:selectlist>
+                                    </div>
+                                </div>
+                                <br />
+                            </apex:outputPanel>
+                            
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-xs-12 mg-top">
+                                    <div>Mask Purchased From</div>
+                                    <div>
+                                        <apex:inputtext list="{!PurchaseFromString}" value="{!maskPurchasedFrom}" style="Width:100%" styleclass="form-control" id="maskpurchasedfrom" html-placeholder="Type Here" maxlength="80" />
+                                        <!--<apex:selectList size="1" value="{!maskPurchasedFrom}" style="width:100%;padding: 0.344rem .75rem;" styleClass="form-control" id="maskpurchasedfrom">
+                                            <apex:selectOptions value="{!PurchaseFromString}" />
+                                        </apex:selectList>-->
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div>Promotional Code (If Applicable)</div>
+                                    <div>
+                                        <apex:inputtext html-placeholder="Promotional Code" style="Width:100%" value="{!maskPromotionalCode}" styleclass="form-control" id="maskpromotionalcode" maxlength="18" />
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <br />
+                            
+                            <div>If you are not using a ResMed mask, please enter its name below</div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <apex:inputtext html-placeholder="Name and brand of your mask" style="Width:100%" value="{!nonResmedMask}" styleclass="form-control" id="maskbrandname" maxlength="32000" />
+                                </div>
+                            </div>
+    
+                            <br />
+                            <br />
+    
+                            <div class="sectionHeader">
+                                Upload Your Invoice
+                            </div>
+    
+                            <div style="text-align: center;">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-xs-12" style="margin:0 auto;">
+                                        <!--mg-top-->
+                                        <div>Purchase Date</div>
+                                        <div style="position:relative;">
+                                            <apex:inputtext html-placeholder="dd/mm/yyyy" value="{!purchaseDate}" alt="Purchase Date" styleclass="{!'form-control ' + if(isPurchaseDateError, 'error', '')}" size="20" maxlength="10" id="PurchaseDate"/>
+                                            <span class="input-group-btn" style="position: absolute;right: 0px; z-index: 3;top: -2px;" id="devicePurchaseDate-trigger">
+                                                <apex:image id="deviceImgPucrcahseDatepicker" value="{!URLFOR($Resource.Calender_icon)}" alt="Purchase Date" title="Purchase Date" styleclass="cal-icon" />
+                                            </span>
+                                            <script>
+                                        jQuery(function(){
+                                            jQuery("[id='{!$Component.PurchaseDate}']").datepicker(
+                                                {
+                                                    dateFormat: "dd/mm/yy",
+                                                  maxDate: '0'
+                                                }
+                                            );
+    
+                                            jQuery("#devicePurchaseDate-trigger").on("click", function() {
+                                                jQuery("[id='{!$Component.PurchaseDate}']").datepicker("show");
+                                            });
+                                        })
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 1-Nov-2018: FT: Commented until further clarificatio from business.
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-xs-12" style="margin:1em auto;">
+                                        <div>Purchase Price</div>
+                                        <div class="row" style="position:relative">
+                                            <span class="col-md-4 col-sm-12">
+                                                <apex:selectlist size="1" value="{!currencyISO}" styleclass="form-control" id="currencyISO">
+                                                    <apex:selectoptions value="{!currency}" />
+                                                </apex:selectlist>
+                                            </span>
+                                            <span class="col-md-8 col-sm-12">
+                                                <apex:inputtext html-placeholder="Purchase Price" style="line-height: 1.6; " value="{!purchasePrice}" styleclass="form-control" id="PurchasePrice" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                -->
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-xs-12" style="margin:0 auto;">
+                                        <div>Upload File</div>
+                                        <div>
+                                            <apex:inputfile value="{!imageFileContent}" filename="{!imageFilename}" styleclass="form-control" onchange="populateSelectedAttachmentFilename(this)" id="uploadBtn" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <br />
+                                
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-xs-12" style="margin:0 auto;">
+                                        <div>Additional Comment(s):</div>
+                                        <div>
+                                            <apex:inputTextArea html-placeholder="Enter comment here!!" html-autocomplete="off" styleClass="form-control" style="Width:100%; margin-left: 5px;" value="{!addtlComment}" id="addtlCommentId"/>
+                                        </div>
+                                    </div>
+								</div>
+                                <br/>
+                                <br />
+                                
+                                <div class="row">
+                                    <div class="g-recaptcha" data-sitekey="{!sitekey}" style="margin:0 auto;" id="reCaptchaDivID" data-callback="recaptcha_callback"></div> 
+                                    <script src='https://www.google.com/recaptcha/api.js'></script>
+                                </div>
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div>
+                                            <label for="agree"> <apex:inputcheckbox value="{!hasAcceptedTerms}" title="Please agree to our policy!" styleclass="checkbox" id="agree" /> I agree to become ResMed Sleepvantage Member</label>
+                                        </div>
+                                    </div>
+                                </div>
+    
+    
+                                <p style="text-align:Justify;    font-size: 16px;">
+                                    ResMed may use this information that you provide in order to market or advertise products to you.
+                                    By checking this box, you consent to this use by ResMed, its <a href="https://www.sleepvantage.com.au/terms-and-conditions.html" target="_blank">terms of use</a>
+                                    and <a href="https://www.sleepvantage.com.au/policies/privacy-policy.html" target="_blank">privacy policy</a>.
+                                    If you are entering this information on behalf of another individual,
+                                    you represent that you are legally authorized to provide consent on behalf of such individual.
+                                </p>
+    
+                                <br />
+    
+                                <div id="register">
+                                    <!-- Disable button upon processing -->
+                                                
+									<apex:actionRegion >
+                                    	<apex:commandbutton id="Previous" value="Back" onclick="goBack();" styleclass="btn btn-primary" rerender="registeryourproductForm"/>&nbsp;
+                                    </apex:actionRegion>
+									           
+                                    <apex:commandbutton id="cmdSubmit" value="Register" action="{!registerProduct}" styleclass="btn btn-primary" status="pageStatus" onclick="callValidation();"/>
+                                    <!--<apex:outputpanel id="cmdSubmitStatus" style="display:none;">
+                                        <img src="/img/loading32.gif" width="25" height="25" />
+                                        <apex:outputlabel value="Processing... Kindly wait for the page to complete registration.." />
+                                    </apex:outputpanel>-->
+                                </div>
+                            </div>
+						</apex:outputPanel>
+                    </apex:form>
+                </div> <!--End of Container 1-->
+            </div> <!--End of Container 1-->
+            <div class="clearfix" />
+            <div class="container-fluid footer" id="contactus" style="height: fit-content;">
+                <img src="{!URLFOR($Resource.SVContactIcon)}" class="img-fluid" />
+                <div class="clearfix"></div>
+                Contact number<br />
+                Monday to Friday, 8am–6pm AEST.<br />
+                <a href="tel:1300 305 705,,8">1300 305 705</a> in Australia<br />
+                <a href="tel:0800 737 633,,8">0800 737 633</a> in New Zealand<br />
+                Or contact us via email on <a href="mailto:info@sleepvantage.com.au?subject=Contact Us">info@sleepvantage.com.au</a><br /><!--info@sleepvantage.com.au *-->
+                <!--    Contact Us 1800 424 0737-->
+            </div>
+        </apex:outputpanel>
+        <apex:outputpanel id="opRegisterationConfirmation" rendered="{!(isRegistered)}">
+            <!--{!(isRegistered)}-->
+            <div style="min-height:400px">
+                <div class="par parsys">
+                    <div class="parbase subscriptionForm section">
+                        <apex:form id="registerationConfirmationForm" styleclass="form-layout user-product-dialog-fm add-product-fm add-mask-fm" style="text-align: center;">
+                            <br />
+                            <br />
+                            <h4>Congratulations you are now a ResMed sleepvantage member!</h4>
+                            <span>Don’t forget to keep your product details up to date to always ensure you are getting the best benefits from your ResMed membership.
+                                  <br />
+                                  If you have any enquiries, please reach out to our friendly Consumer Care team on 1300 305 705.
+                                  <br />
+                                  Reference Number: {! if(!ISBLANK(caseNumber), caseNumber, '' )}
+                            </span>
+
+                            <a href="https://www.sleepvantage.com.au"><label class="fieldname required" for="productType">Please click this link to return to Sleepvantage</label></a>
+                        </apex:form>
+                    </div>
+                </div>
+            </div>
+        </apex:outputpanel>
+        <script type="text/javascript">
+                                  
+			function populateSelectedAttachmentFilename(objInput)
+            {
+                    
+                var attach,file;
+                attach = document.getElementById('{!$Component.registeryourproductForm.uploadBtn}');
+                
+                file = attach.files[0];
+                var filename = file.name;
+                var filesize = file.size;
+                if(10000000 < filesize){
+                    alert('{!$Label.SV_File_Size_Limit_Msg}');
+                	objInput.value = "";
+                    return false;
+                }
+                
+                var _validFileExtensions = [{!$Label.SV_Valid_File_Format_Extensions}];  
+                    if (objInput.type == "file") {
+                        var sFileName = objInput.value;
+                        if (sFileName.length > 0) {
+                            var blnValid = false;
+                            for (var j = 0; j < _validFileExtensions.length; j++) {
+                                var sCurExtension = _validFileExtensions[j];
+                                if (sFileName.substr(sFileName.length - sCurExtension.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
+                                    blnValid = true;
+                                    break;
+                                }
+                            }
+                            if (!blnValid) {
+                                alert("Sorry, You can only upload attachment having " + _validFileExtensions.join(", ")+ " file extensions.");
+                                objInput.value = "";
+                                return false;
+                            }
+                        }
+                    }
+                //alert('objInput'+objInput.value);
+                uploadFile.value=objInput.value;
+            }
+            
+            /*function populateSelectedAttachmentFilename(objInput)
+            {
+                //alert('objInput'+objInput.value);
+                uploadFile.value=objInput.value;
+            }*/
+			
+			function callValidation(){				
+                if(grecaptcha.getResponse().length == 0){		
+                    alert('Please click the reCAPTCHA checkbox');		
+                    return false;		
+                }		
+                return true;		
+            }		
+                		
+			function validateInputData(){		
+				var lName = document.getElementById("registrationPage:registeryourproductForm:existingUserLName").value;		
+                var memShipNo = document.getElementById("registrationPage:registeryourproductForm:existingUserMShip").value;		
+                		
+                if(lName== "" || memShipNo== ""){		
+                	alert('Enter details in both fields before clicking the button.');		
+                    return false;		
+                }
+                return true;
+			}
+        </script>
+                                    
+        <script type="text/javascript">
+        var $ = jQuery.noConflict();
+		
+        $('[id$=registeryourproductForm]').validate({
+            submitHandler: function(form) {
+                document.getElementById("registrationPage:registeryourproductForm:cmdSubmit").setAttribute('disabled', true);
+                document.getElementById("registrationPage:registeryourproductForm:cmdSubmitStatus").setAttribute('style', 'display:block;');
+    
+                form.submit();
+            }
+        });
+        errorClass:'error-class',
+        $('[id$=titles]').rules("add",{
+            required: true,
+            messages:{
+              required:"Please Enter Title",
+           }
+        });
+
+		$('[id$=firstname]').rules("add",{
+            required: true,
+            maxlength:255,
+            messages:{
+              required:"Please Enter First Name",
+              maxlength:"Max character Limit 255",
+           }
+        });
+
+        $('[id$=lastname]').rules("add",{
+            required: true,
+            maxlength:255,
+            messages:{
+              required:"Please Enter Last Name",
+              maxlength:"Max character Limit 255",
+           }
+        });
+
+        $('[id$=email]').rules("add",{
+            required: true,
+            email: true,
+            messages:{
+              required: "Please enter Email Address",
+              email: "Please enter valid Email Address"
+           }
+        });
+
+        $('[id$=homenumber]').rules("add",{
+            number: true,
+            messages:{
+              number:"Only numeric for phone number",
+           }
+        });
+        
+        $('[id$=mobilenumber]').rules("add",{
+            required: true,
+            number: true,
+            messages:{
+              required:"Please Enter Mobile number",
+              number:"Only numeric for phone number",
+           }
+        });
+
+        $('[id$=streetaddress]').rules("add",{
+            required: true,
+            messages:{
+              required:"Please Enter Address",
+           }
+        });
+        $('[id$=suburb]').rules("add",{
+            required: true,
+            maxlength:100,
+            messages:{
+              required:"Please Enter Suburb",
+              maxlength:"Suburd can't exceed 100",
+           }
+        });
+        $('[id$=postcode]').rules("add",{
+            required: true,
+            number: true,
+            maxlength: 4,
+            messages:{
+              required:"Please Enter Post Code",
+              maxlength: "Post code can't exceed 4",
+              number:"Only numeric for post code",
+           }
+        });
+        $('[id$=country]').rules("add",{
+            required: true,
+            messages:{
+              required:"Please Enter Country",
+           }
+        });
+
+        $('[id$=resmeddevices]').rules("add",{
+            required: function(element){
+                    var resmeddevice = document.getElementById("registrationPage:registeryourproductForm:resmeddevices").value;
+                    var resmedmask = document.getElementById("registrationPage:registeryourproductForm:resmedmasks").value;
+                    if(resmeddevice!="" || resmedmask!=""){
+                        //alert('condition met');
+                        return false;
+                    }
+                    else{
+                        //alert('condition not met');
+                        return true;
+                    }
+                },
+            messages:{
+              required:"Please select ResMed Device or ResMed Mask",
+           }
+        });
+
+        $('[id$=deviceserialNumber]').rules("add",{
+            required: function(element){
+                    var resmeddevice = document.getElementById("registrationPage:registeryourproductForm:resmeddevices").value;
+                    if(resmeddevice!=""){
+                        //alert('condition met');
+                        return true;
+                    }
+                    else{
+                        //alert('condition not met');
+                        return false;
+                    }
+                },
+            number: true,
+            minlength: 11,
+            maxlength: 11,
+            messages:{
+              required:"Please Enter Device Serial Number",
+              number:"11 Digit code required",
+              minlength:"11 Digit code required",
+              maxlength:"11 Digit code required",
+           }
+        });
+        $('[id$=devicepurchasedfrom]').rules("add",{
+            required: function(element){
+                    var resmeddevice = document.getElementById("registrationPage:registeryourproductForm:resmeddevices").value;
+                    if(resmeddevice!=""){
+                        //alert('condition met');
+                        return true;
+                    }
+                    else{
+                        //alert('condition not met');
+                        return false;
+                    }
+                },
+            messages:{
+              required:"Please Enter Device Purchased From",
+           }
+        });
+                                    
+		$('[id$=devicewarrantycode]').rules("add",{
+            required: function(element){
+                    var extWarrantyCode = document.getElementById("registrationPage:registeryourproductForm:devicewarrantycode").value;
+                    if(extWarrantyCode!=""){
+                        //alert('condition met');
+                        return true;
+                    }
+                    else{
+                        //alert('condition not met');
+                        return false;
+                    }
+                },
+            minlength: 11,
+            maxlength: 11,
+            messages:{
+              required:"Please Enter Extended Warranty Code Number",
+              number:"11 Digit code required",
+              minlength:"11 Digit code required",
+              maxlength:"11 Digit code required",
+           }
+        });
+                                    
+        $('[id$=resmedmasks]').rules("add",{
+            required: function(element){
+                    var resmeddevice = document.getElementById("registrationPage:registeryourproductForm:resmeddevices").value;
+                    var resmedmask = document.getElementById("registrationPage:registeryourproductForm:resmedmasks").value;
+                    if(resmeddevice!="" || resmedmask!=""){
+                        //alert('condition met');
+                        return false;
+                    }
+                    else{
+                        //alert('condition not met');
+                        return true;
+                    }
+                },
+            messages:{
+              required:"Please select ResMed Device or ResMed Mask",
+           }
+        });
+        $('[id$=maskpurchasedfrom]').rules("add",{
+            required: function(element){
+                    var resmedmask = document.getElementById("registrationPage:registeryourproductForm:resmedmasks").value;
+                    var nonresmedmask = document.getElementById("registrationPage:registeryourproductForm:maskbrandname").value;
+                    if(resmedmask!="" || nonresmedmask!=""){
+                        //alert('condition met');
+                        return true;
+                    }
+                    else{
+                        //alert('condition not met');
+                        return false;
+                    }
+                },
+            messages:{
+              required:"Please Enter Mask Purchased From",
+           }
+        });
+                                    
+		$('[id$=maskSize]').rules("add",{
+            required: function(element){
+                    var resmedmask = document.getElementById("registrationPage:registeryourproductForm:resmedmasks").value;
+                    if(resmedmask!=""){
+                        return true;
+                    }
+                    else{
+                        return false;
+                    }
+                },
+            messages:{
+              required:"Please Enter Mask Size",
+           }
+        });
+
+        $('[id$=PurchaseDate]').rules("add",{
+            required: true,
+            messages:{
+              required:"Please Enter Purchase Date",
+           }
+        });
+
+        $('[id$=gender]').rules("add",{
+            required: true,
+            messages:{
+              required:"Please select Gender",
+           }
+        });
+/** 1-Nov-2018: FT Commented until further confirmation from business
+        $('[id$=currencyISO]').rules("add",{
+            required: true,
+            messages:{
+              required:"Please select Currency",
+           }
+        });
+
+        $('[id$=PurchasePrice]').rules("add",{
+            required: true,
+            number: true,
+            messages:{
+              required:"Please enter Purchase Price",
+              number:"Please enter a valid price",
+           }
+        });
+
+*/
+        $('[id$=uploadBtn]').rules("add",{
+            required: true,
+            messages:{
+              required:"Please Upload Invoice",
+           }
+        });
+
+        $('[id$=agree]').rules("add",{
+            required: true,
+            messages:{
+              required:"Please agree to Terms",
+           }
+        });
+                                
+		$('[id$=day]').rules("add",{
+            required: true,
+            messages:{
+              required:"Please select Day",
+           }
+        });
+                                
+		$('[id$=month]').rules("add",{
+            required: true,
+            messages:{
+              required:"Please select Month",
+           }
+        });
+                                
+		$('[id$=year]').rules("add",{
+            required: true,
+            messages:{
+              required:"Please select Year",
+           }
+        });
+                        
+        var onloadCallback = function() {
+            grecaptcha.render('reCaptchaDivID', {'sitekey' : '6LeDyJwUAAAAANAcp3yHJzs7J4xHRZxMNdlOD6-O'});
+        }; 
+                                
+		function checkSerialNumberLength(){
+            var len = document.getElementById("registrationPage:registeryourproductForm:deviceserialNumber").value;
+            
+            if(len.length == 11){
+                callWSJS(); 
+            	return false;
+			}else{
+                alert('Please enter a valid 11 Digit Serial Number');
+			}
+        }                                
+                                
+		function loadFormForNewUser() {
+            var checkBox = document.getElementById("registrationPage:registeryourproductForm:newUserCheck");
+            if (checkBox.checked == true){
+                displayNewForm();
+            }
+        }
+        
+		function loadFormForExistingUser() {
+            var checkBox = document.getElementById("registrationPage:registeryourproductForm:existingUserCheck");
+            if (checkBox.checked == true){
+                displayFormWithContactDetails();
+            }
+        }  
+		
+		function closeEmailChangeRequest() { 
+            hideEditEmailModalBox();
+        }
+                                    
+		function submitEmailChangeRequest() { 
+            updateNewEmail();
+            $('#editEmailPanel').hide();
+        }
+                                    
+                                    /*function myDeviceFunction(m_Val,m_Type,p_type,action_Name) {
+            if(m_Type=='Device') {
+                ajexMaskMethod(m_Val,'',p_type,action_Name); // alert('1');
+            } else if(m_Type=='Mask') {
+                ajexMaskMethod2('',m_Val,p_type,action_Name); // alert('11');
+            }
+        }*/
+        
+        function onDeviceNameChange(Val) { 
+            showMaskNameValues(Val);
+        }
+        
+        function onMaskNameChange(Val) { 
+            var selectedDevice = document.getElementById("registrationPage:registeryourproductForm:resmeddevices").value;
+            showMaskSizeValues(Val, selectedDevice);
+            
+        }
+                                    
+		function selPromotionalCodeVal(Val) {
+            if(Val == 'Yes'){
+                ajexShowPromotionalCode('Yes'); 
+            }else {
+                ajexShowPromotionalCode('No');
+            }
+        }
+                                    
+		function goBack() { 
+            navigateToBackScreen();
+            
+        }
+        </script>        
+         
+    </body>
+</html>
+</apex:page>

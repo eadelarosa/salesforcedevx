@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sleep_Lab_Listed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sleep Labs that are listed on ResMed.com and sleepvanatge.com.au</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sleep Labs that are listed on ResMed.com and sleepvanatge.com.au</inlineHelpText>
+    <label>Sleep Lab Listed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Diagnosis__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary Diagnosis</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Obstructive Sleep Apnoea (OSA)</fullName>
+                <default>false</default>
+                <label>Obstructive Sleep Apnoea (OSA)</label>
+            </value>
+            <value>
+                <fullName>Central Sleep Apnoea (CSA)</fullName>
+                <default>false</default>
+                <label>Central Sleep Apnoea (CSA)</label>
+            </value>
+            <value>
+                <fullName>Mixed Apnoea</fullName>
+                <default>false</default>
+                <label>Mixed Apnoea</label>
+            </value>
+            <value>
+                <fullName>Chronic Obstructive Pulmonary Disease (COPD)</fullName>
+                <default>false</default>
+                <label>Chronic Obstructive Pulmonary Disease (COPD)</label>
+            </value>
+            <value>
+                <fullName>Overlap Syndrome (OSA &amp; COPD)</fullName>
+                <default>false</default>
+                <label>Overlap Syndrome (OSA &amp; COPD)</label>
+            </value>
+            <value>
+                <fullName>Restrictive Lung Disease (e.g. Chest wall disorders, interstitial lung disease, sarcoidosis)</fullName>
+                <default>false</default>
+                <label>Restrictive Lung Disease (e.g. Chest wall disorders, interstitial lung disease, sarcoidosis)</label>
+            </value>
+            <value>
+                <fullName>Neuromuscular Disease</fullName>
+                <default>false</default>
+                <label>Neuromuscular Disease</label>
+            </value>
+            <value>
+                <fullName>Obesity Hypoventilation Syndrome (OHS)</fullName>
+                <default>false</default>
+                <label>Obesity Hypoventilation Syndrome (OHS)</label>
+            </value>
+            <value>
+                <fullName>I do not have a relevant medical diagnosis</fullName>
+                <default>false</default>
+                <label>I do not have a relevant medical diagnosis</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Prefer not to mention</fullName>
+                <default>false</default>
+                <label>Prefer not to mention</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

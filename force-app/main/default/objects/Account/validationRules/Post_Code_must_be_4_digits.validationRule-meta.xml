@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_Code_must_be_4_digits</fullName>
+    <active>false</active>
+    <errorConditionFormula>And(
+Not(ISBLANK( BillingPostalCode)),
+LEN(BillingPostalCode) != 4)</errorConditionFormula>
+    <errorDisplayField>BillingPostalCode</errorDisplayField>
+    <errorMessage>Post code must be equal to 4 digits</errorMessage>
+</ValidationRule>

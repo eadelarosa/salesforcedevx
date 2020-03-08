@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pricelist_Primary__c</fullName>
+    <externalId>false</externalId>
+    <label>Pricelist - Primary</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AUS - Moonstone</fullName>
+                <default>false</default>
+                <label>AUS - Moonstone</label>
+            </value>
+            <value>
+                <fullName>AUS - Black Opal</fullName>
+                <default>false</default>
+                <label>AUS - Black Opal</label>
+            </value>
+            <value>
+                <fullName>AUS - Ruby</fullName>
+                <default>false</default>
+                <label>AUS - Ruby</label>
+            </value>
+            <value>
+                <fullName>AUS - Sapphire</fullName>
+                <default>false</default>
+                <label>AUS - Sapphire</label>
+            </value>
+            <value>
+                <fullName>AUS - Onyx</fullName>
+                <default>false</default>
+                <label>AUS - Onyx</label>
+            </value>
+            <value>
+                <fullName>AUS - Topaz</fullName>
+                <default>false</default>
+                <label>AUS - Topaz</label>
+            </value>
+            <value>
+                <fullName>AUS - Amethyst</fullName>
+                <default>false</default>
+                <label>AUS - Amethyst</label>
+            </value>
+            <value>
+                <fullName>AUS - Citrine</fullName>
+                <default>false</default>
+                <label>AUS - Citrine</label>
+            </value>
+            <value>
+                <fullName>AUS - Jade</fullName>
+                <default>false</default>
+                <label>AUS - Jade</label>
+            </value>
+            <value>
+                <fullName>AUS - Opal</fullName>
+                <default>false</default>
+                <label>AUS - Opal</label>
+            </value>
+            <value>
+                <fullName>AUS - Sunstone</fullName>
+                <default>false</default>
+                <label>AUS - Sunstone</label>
+            </value>
+            <value>
+                <fullName>AUS - Emerald</fullName>
+                <default>false</default>
+                <label>AUS - Emerald</label>
+            </value>
+            <value>
+                <fullName>AUS - Diamond</fullName>
+                <default>false</default>
+                <label>AUS - Diamond</label>
+            </value>
+            <value>
+                <fullName>AUS - Platinum</fullName>
+                <default>false</default>
+                <label>AUS - Platinum</label>
+            </value>
+            <value>
+                <fullName>AUS - Gold</fullName>
+                <default>false</default>
+                <label>AUS - Gold</label>
+            </value>
+            <value>
+                <fullName>AUS - Silver</fullName>
+                <default>false</default>
+                <label>AUS - Silver</label>
+            </value>
+            <value>
+                <fullName>AUS - Bronze</fullName>
+                <default>false</default>
+                <label>AUS - Bronze</label>
+            </value>
+            <value>
+                <fullName>AUS - Quartz</fullName>
+                <default>false</default>
+                <label>AUS - Quartz</label>
+            </value>
+            <value>
+                <fullName>AUS - Sleep RRP</fullName>
+                <default>false</default>
+                <label>AUS - Sleep RRP</label>
+            </value>
+            <value>
+                <fullName>AUS - Diagnostics RRP</fullName>
+                <default>false</default>
+                <label>AUS - Diagnostics RRP</label>
+            </value>
+            <value>
+                <fullName>AUS - Rubellite</fullName>
+                <default>false</default>
+                <label>AUS - Rubellite</label>
+            </value>
+            <value>
+                <fullName>AUS - Turquoise</fullName>
+                <default>false</default>
+                <label>AUS - Turquoise</label>
+            </value>
+            <value>
+                <fullName>AUS - On Quote</fullName>
+                <default>false</default>
+                <label>AUS - On Quote</label>
+            </value>
+            <value>
+                <fullName>AUS - Amber</fullName>
+                <default>false</default>
+                <label>AUS - Amber</label>
+            </value>
+            <value>
+                <fullName>AUS - Aquamarine</fullName>
+                <default>false</default>
+                <label>AUS - Aquamarine</label>
+            </value>
+            <value>
+                <fullName>AUS - RC Jasper</fullName>
+                <default>false</default>
+                <label>AUS - RC Jasper</label>
+            </value>
+            <value>
+                <fullName>AUS - RC Quartz</fullName>
+                <default>false</default>
+                <label>AUS - RC Quartz</label>
+            </value>
+            <value>
+                <fullName>AUS - RC Diamond</fullName>
+                <default>false</default>
+                <label>AUS - RC Diamond</label>
+            </value>
+            <value>
+                <fullName>AUS - RC RRP</fullName>
+                <default>false</default>
+                <label>AUS - RC RRP</label>
+            </value>
+            <value>
+                <fullName>AUS - SBS</fullName>
+                <default>false</default>
+                <label>AUS - SBS</label>
+            </value>
+            <value>
+                <fullName>AUS - ResSleep Franchisee</fullName>
+                <default>false</default>
+                <label>AUS - ResSleep Franchisee</label>
+            </value>
+            <value>
+                <fullName>AUS - WASDRI</fullName>
+                <default>false</default>
+                <label>AUS - WASDRI</label>
+            </value>
+            <value>
+                <fullName>AUS - Genesis Care</fullName>
+                <default>false</default>
+                <label>AUS - Genesis Care</label>
+            </value>
+            <value>
+                <fullName>AUS - Dept of Health WA</fullName>
+                <default>false</default>
+                <label>AUS - Dept of Health WA</label>
+            </value>
+            <value>
+                <fullName>AUS - QHSDU</fullName>
+                <default>false</default>
+                <label>AUS - QHSDU</label>
+            </value>
+            <value>
+                <fullName>AUS - QLD Sleep Disorders Program</fullName>
+                <default>false</default>
+                <label>AUS - QLD Sleep Disorders Program</label>
+            </value>
+            <value>
+                <fullName>AUS - HPV</fullName>
+                <default>false</default>
+                <label>AUS - HPV</label>
+            </value>
+            <value>
+                <fullName>AUS - ALH &amp; HSS</fullName>
+                <default>false</default>
+                <label>AUS - ALH &amp; HSS</label>
+            </value>
+            <value>
+                <fullName>NZ - Emerald</fullName>
+                <default>false</default>
+                <label>NZ - Emerald</label>
+            </value>
+            <value>
+                <fullName>NZ - Diamond</fullName>
+                <default>false</default>
+                <label>NZ - Diamond</label>
+            </value>
+            <value>
+                <fullName>NZ - Platinum</fullName>
+                <default>false</default>
+                <label>NZ - Platinum</label>
+            </value>
+            <value>
+                <fullName>NZ - Gold</fullName>
+                <default>false</default>
+                <label>NZ - Gold</label>
+            </value>
+            <value>
+                <fullName>NZ - Silver</fullName>
+                <default>false</default>
+                <label>NZ - Silver</label>
+            </value>
+            <value>
+                <fullName>NZ - Bronze</fullName>
+                <default>false</default>
+                <label>NZ - Bronze</label>
+            </value>
+            <value>
+                <fullName>NZ - Sleep RRP</fullName>
+                <default>false</default>
+                <label>NZ - Sleep RRP</label>
+            </value>
+            <value>
+                <fullName>NZ - RC RRP</fullName>
+                <default>false</default>
+                <label>NZ - RC RRP</label>
+            </value>
+            <value>
+                <fullName>NZ - EdenSleep</fullName>
+                <default>false</default>
+                <label>NZ - EdenSleep</label>
+            </value>
+            <value>
+                <fullName>NZ - SleepGP</fullName>
+                <default>false</default>
+                <label>NZ - SleepGP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

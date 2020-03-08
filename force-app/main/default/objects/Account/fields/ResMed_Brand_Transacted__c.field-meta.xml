@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ResMed_Brand_Transacted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>ITGI-484 | Brooklyn Project | COMMEXC-1366 |COMMEXC-1367. 19 June 2019.</description>
+    <externalId>false</externalId>
+    <label>ResMed Brand Transacted</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

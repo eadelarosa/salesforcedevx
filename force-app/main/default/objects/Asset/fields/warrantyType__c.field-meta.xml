@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>warrantyType__c</fullName>
+    <description>Standard if not a member. SV Warranty if user is SV Member (auto extension), Extended if a warranty was purchased or provided as a promo.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Standard if not a member. SV Warranty if user is SV Member (auto extension), Extended if a warranty was purchased or provided as a promo.</inlineHelpText>
+    <label>Warranty Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard Warranty</fullName>
+                <default>false</default>
+                <label>Standard Warranty</label>
+            </value>
+            <value>
+                <fullName>SV Warranty</fullName>
+                <default>false</default>
+                <label>SV Warranty</label>
+            </value>
+            <value>
+                <fullName>Extended Warranty</fullName>
+                <default>false</default>
+                <label>Extended Warranty</label>
+            </value>
+            <value>
+                <fullName>Ex Rental</fullName>
+                <default>false</default>
+                <label>Ex Rental</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

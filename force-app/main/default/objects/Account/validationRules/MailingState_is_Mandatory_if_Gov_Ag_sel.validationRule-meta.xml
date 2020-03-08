@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MailingState_is_Mandatory_if_Gov_Ag_sel</fullName>
+    <active>true</active>
+    <description>If &#39;Government Agency&#39; is selected, Mailing state required.</description>
+    <errorConditionFormula>if(AND(not(ISPICKVAL(Government_Agency__c, &#39;&#39;)),RecordTypeId=$Label.Member_Recordtype), 
+ISBLANK(Mailing_State_Province_SPE__c) 
+,false)</errorConditionFormula>
+    <errorDisplayField>Mailing_State_Province_SPE__c</errorDisplayField>
+    <errorMessage>If &#39;Government Agency&#39; is selected, please ensure to ADD &#39;Mailing State/Province&#39; in order to save the record.</errorMessage>
+</ValidationRule>

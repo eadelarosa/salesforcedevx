@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_trial_start_date_when_purchaser</fullName>
+    <active>true</active>
+    <description>You can&#39;t add a Trial Start Date when the Web status is purchaser</description>
+    <errorConditionFormula>AND( $User.Alias != &#39;iserv&#39;,TEXT(CPAP_Status__c) = &#39;Purchaser&#39;, NOT(ISBLANK(Trial_Start_Date__c)) )</errorConditionFormula>
+    <errorMessage>You can&#39;t add a Trial Start Date when the status of the Member is Member, but you can add or modify the previous date</errorMessage>
+</ValidationRule>

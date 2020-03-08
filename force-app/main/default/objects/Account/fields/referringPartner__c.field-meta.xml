@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>referringPartner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the referring Sleep Lab or Hospital. Leave it blank if you do not have this information.</inlineHelpText>
+    <label>Sleep Lab/Hospital/Partner Sleep Lab</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Hospital Department, Partner - Sleep Lab, Sleep Lab, Hospital</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>Sleep Lab, Partner - Sleep Lab</value>
+        </filterItems>
+        <filterItems>
+            <field>$Profile.Name</field>
+            <operation>equals</operation>
+            <value>customers Profile, System Administrator</value>
+        </filterItems>
+        <infoMessage>The Referring Sleep Lab / Hospital must be a partner type of Sleep Lab or Partner - Sleep Lab</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Member Referral (Sleep Lab_Hospital)</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

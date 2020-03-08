@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Treatment_Profile__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Reason_for_Diagnosis__c ,
+&#39;Symptoms&#39;, &#39;DI&#39;, 
+&#39;Partner&#39;, &#39;DI&#39;,
+&#39;Health&#39;, &#39;UI&#39; ,
+&#39;Condition&#39;, &#39;UI&#39;,
+&#39;Unknown&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Treatment Profile</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

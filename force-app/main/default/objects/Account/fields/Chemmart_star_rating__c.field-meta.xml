@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chemmart_star_rating__c</fullName>
+    <description>Shows the tired level of support for Chemmart pharmacy&#39;s</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Star rating is based on units sold criteria.</inlineHelpText>
+    <label>Chemmart star rating</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 star</fullName>
+                <default>false</default>
+                <label>1 star</label>
+            </value>
+            <value>
+                <fullName>2 star</fullName>
+                <default>false</default>
+                <label>2 star</label>
+            </value>
+            <value>
+                <fullName>3 star</fullName>
+                <default>false</default>
+                <label>3 star</label>
+            </value>
+            <value>
+                <fullName>4 star</fullName>
+                <default>false</default>
+                <label>4 star</label>
+            </value>
+            <value>
+                <fullName>5 star</fullName>
+                <default>false</default>
+                <label>5 star</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

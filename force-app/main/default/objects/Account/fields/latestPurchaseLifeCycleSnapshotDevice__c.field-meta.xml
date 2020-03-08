@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>latestPurchaseLifeCycleSnapshotDevice__c</fullName>
+    <description>Represents the latest purchaseLifeCycleSnapshot for a device from the related device Product Registrations</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Represents the latest purchaseLifeCycleSnapshot for a device from the related device Product Registrations</inlineHelpText>
+    <label>Latest Purchase Lifecycle Device</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

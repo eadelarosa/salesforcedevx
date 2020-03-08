@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_Record_X_REF_ID__c</fullName>
+    <description>This field contains the cross reference ID of an external or foreign record. In the case of ANZ Retail Retention integration, if the field &quot;External System ID&quot; contains a GUID of MYOB, this field will then contain the ID of the cross-referenced record in CorePlus. In this case, MYOB is the parent record and can cross-reference one or more CorePlus record - and vice-versa.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>External Record X REF ID</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

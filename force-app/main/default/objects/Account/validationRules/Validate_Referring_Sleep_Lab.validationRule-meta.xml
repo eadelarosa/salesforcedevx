@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Referring_Sleep_Lab</fullName>
+    <active>false</active>
+    <errorConditionFormula>IsPersonAccount &amp;&amp;  NOT( ISBLANK(referringPartner__c )) &amp;&amp; NOT(ISPICKVAL( How_Diagnosed__c,&quot;&quot; )) &amp;&amp;
+IF( ISPICKVAL( How_Diagnosed__c, &#39;Home&#39; ),
+NOT(  AND(  referringPartner__r.Record_Type__c = &#39;Partner - Sleep Lab&#39;, ISPICKVAL(referringPartner__r.Type, &#39;Partner - Sleep Lab&#39;) ) ),
+NOT( OR( AND(  referringPartner__r.Record_Type__c = &#39;Partner - Sleep Lab&#39;, ISPICKVAL(referringPartner__r.Type, &#39;Partner - Sleep Lab&#39;) ),
+AND(  referringPartner__r.Record_Type__c = &#39;Sleep Lab&#39;, ISPICKVAL( referringPartner__r.Type, &#39;Sleep Lab&#39;) ),
+AND(  referringPartner__r.Record_Type__c = &#39;Hospital Department&#39;, ISPICKVAL( referringPartner__r.Type, &#39;Sleep Lab&#39; ) ) ) ) )</errorConditionFormula>
+    <errorDisplayField>referringPartner__c</errorDisplayField>
+    <errorMessage>Invalid Partner Type for Referring Sleep Lab</errorMessage>
+</ValidationRule>

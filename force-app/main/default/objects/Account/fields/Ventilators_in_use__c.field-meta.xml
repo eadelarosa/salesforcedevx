@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ventilators_in_use__c</fullName>
+    <description>Describes the ventilators in use by the retrieval units</description>
+    <externalId>false</externalId>
+    <label>Ventilators in use</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Astral 100</fullName>
+                <default>false</default>
+                <label>Astral 100</label>
+            </value>
+            <value>
+                <fullName>Astral 150</fullName>
+                <default>false</default>
+                <label>Astral 150</label>
+            </value>
+            <value>
+                <fullName>Elisee 150</fullName>
+                <default>false</default>
+                <label>Elisee 150</label>
+            </value>
+            <value>
+                <fullName>Elisee 350</fullName>
+                <default>false</default>
+                <label>Elisee 350</label>
+            </value>
+            <value>
+                <fullName>Lumis 100 VPAP S</fullName>
+                <default>false</default>
+                <label>Lumis 100 VPAP S</label>
+            </value>
+            <value>
+                <fullName>Lumis 150 VPAP ST</fullName>
+                <default>false</default>
+                <label>Lumis 150 VPAP ST</label>
+            </value>
+            <value>
+                <fullName>Lumis 150 VPAP ST-A</fullName>
+                <default>false</default>
+                <label>Lumis 150 VPAP ST-A</label>
+            </value>
+            <value>
+                <fullName>Stellar 150</fullName>
+                <default>false</default>
+                <label>Stellar 150</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

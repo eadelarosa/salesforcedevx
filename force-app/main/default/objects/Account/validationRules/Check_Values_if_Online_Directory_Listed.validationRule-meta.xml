@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Values_if_Online_Directory_Listed</fullName>
+    <active>true</active>
+    <description>Require values for the fields - &quot;Product Rego Account Name&quot; &amp; &quot;Online Account Name&quot; - IF the field &quot;Outlet Directory Listed&quot; is ticked.</description>
+    <errorConditionFormula>AND( isWebEnabled__c,  OR(Record_Type__c==&#39;Accredited Partner&#39;, Record_Type__c==&#39;Authorised Dealer&#39;, Record_Type__c==&#39;Partner - Sleep Lab&#39;, Record_Type__c==&#39;Pharmacy&#39;), OR( ISNULL( Product_Rego_Account_Name__c ), ISBLANK(Product_Rego_Account_Name__c), ISNULL( Online_Account_Name__c), ISBLANK(Online_Account_Name__c)))</errorConditionFormula>
+    <errorDisplayField>isWebEnabled__c</errorDisplayField>
+    <errorMessage>When &quot;Outlet Directory Listed&quot; is ticked, &quot;Product Rego Account Name&quot; and &quot;Online Account Name&quot; MUST HAVE values.</errorMessage>
+</ValidationRule>

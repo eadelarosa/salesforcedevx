@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preferred_clinic_for_follow_up__c</fullName>
+    <externalId>false</externalId>
+    <label>Preferred clinic for follow up</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CPAP Australia – Kogarah</fullName>
+                <default>false</default>
+                <label>CPAP Australia – Kogarah</label>
+            </value>
+            <value>
+                <fullName>CPAP Australia - Parramatta</fullName>
+                <default>false</default>
+                <label>CPAP Australia - Parramatta</label>
+            </value>
+            <value>
+                <fullName>CPAP Australia - Surrey Hills</fullName>
+                <default>false</default>
+                <label>CPAP Australia - Surrey Hills</label>
+            </value>
+            <value>
+                <fullName>ResSleep – Bella Vista</fullName>
+                <default>false</default>
+                <label>ResSleep – Bella Vista</label>
+            </value>
+            <value>
+                <fullName>ResSleep - Dee Why</fullName>
+                <default>false</default>
+                <label>ResSleep - Dee Why</label>
+            </value>
+            <value>
+                <fullName>ResSleep  - Miranda</fullName>
+                <default>false</default>
+                <label>ResSleep  - Miranda</label>
+            </value>
+            <value>
+                <fullName>ResSleep - Mount Waverly</fullName>
+                <default>false</default>
+                <label>ResSleep - Mount Waverly</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

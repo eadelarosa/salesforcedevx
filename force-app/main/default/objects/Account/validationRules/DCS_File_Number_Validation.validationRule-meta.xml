@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DCS_File_Number_Validation</fullName>
+    <active>true</active>
+    <description>If &#39;Government Agency&#39; is selected, please ensure to ADD &#39;File Number&#39; between 8 to 12 Characters</description>
+    <errorConditionFormula>if(not(ISPICKVAL(Government_Agency__c, &#39;&#39;)), 
+OR(File_Number__c == null, LEN(File_Number__c) &lt; 8,
+LEN(File_Number__c) &gt; 13) 
+,false)</errorConditionFormula>
+    <errorDisplayField>File_Number__c</errorDisplayField>
+    <errorMessage>If &#39;Government Agency&#39; is selected, please ensure to ADD &#39;File Number&#39; between 8 to 12 Characters</errorMessage>
+</ValidationRule>

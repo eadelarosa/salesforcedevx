@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mask_Type_Used__c</fullName>
+    <externalId>false</externalId>
+    <label>Mask Type Used</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Reusable</fullName>
+                <default>false</default>
+                <label>Reusable</label>
+            </value>
+            <value>
+                <fullName>Vented</fullName>
+                <default>false</default>
+                <label>Vented</label>
+            </value>
+            <value>
+                <fullName>Non Vented</fullName>
+                <default>false</default>
+                <label>Non Vented</label>
+            </value>
+            <value>
+                <fullName>Disposable Vented</fullName>
+                <default>false</default>
+                <label>Disposable Vented</label>
+            </value>
+            <value>
+                <fullName>Disposable Non Vented</fullName>
+                <default>false</default>
+                <label>Disposable Non Vented</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

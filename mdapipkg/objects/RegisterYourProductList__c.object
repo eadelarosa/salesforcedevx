@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Register Your Product List</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ProductName__c</fullName>
+        <description>Product Name</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Name</inlineHelpText>
+        <label>Product Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProductType__c</fullName>
+        <description>Product Type</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <length>20</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sort_Index__c</fullName>
+        <description>This field will help control the order in which the select options will display on the UI.</description>
+        <externalId>false</externalId>
+        <label>Sort Index</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Register Your Product List</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Sort_Index__c</columns>
+        <columns>NAME</columns>
+        <columns>ProductName__c</columns>
+        <columns>ProductType__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>By_Sort_Index</fullName>
+        <columns>NAME</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>SETUP_TYPE</columns>
+        <columns>SETUP_OWNER_NAME</columns>
+        <columns>Sort_Index__c</columns>
+        <columns>ProductName__c</columns>
+        <columns>ProductType__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>By Sort Index</label>
+    </listViews>
+    <visibility>Public</visibility>
+</CustomObject>

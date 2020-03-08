@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Australia_State_Format</fullName>
+    <active>false</active>
+    <description>State must be in 3 letter abbreviation if country is Australia.
+State must be one of the list specified in object NZ_District if country is New Zealand,</description>
+    <errorConditionFormula>OR(
+AND(
+LEN(BillingState) &gt; 0,
+OR (UPPER(BillingCountry)=&quot;AUSTRALIA&quot;, UPPER(BillingCountry)=&quot;AUS&quot;),
+NOT(CONTAINS( &quot;ACT:NSW:NT:QLD:SA:TAS:VIC:WA&quot;, UPPER(BillingState)))),
+AND(
+LEN(BillingState) &gt; 0,
+OR (UPPER(BillingCountry)=&quot;NEW ZEALAND&quot;, UPPER(BillingCountry)=&quot;NZ&quot;),
+VLOOKUP($ObjectType.NZ_District__c.Fields.Country_Code__c, $ObjectType.NZ_District__c.Fields.Name, BillingState) &lt;&gt;&quot;NZ&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>BillingState</errorDisplayField>
+    <errorMessage>If Country is Australia, State must be one of the following: (ACT:NSW:NT:QLD:SA:TAS:VIC:WA)
+If Country is New Zealand, State must be one of the list specified in object NZ_District.</errorMessage>
+</ValidationRule>

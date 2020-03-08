@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Australia</fullName>
+                    <default>false</default>
+                    <label>Australia</label>
+                </value>
+                <value>
+                    <fullName>New Zealand</fullName>
+                    <default>false</default>
+                    <label>New Zealand</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Date_of_Birth__c</fullName>
+        <description>As requested through CTASK0026172 - with approval from Matt Shaw.</description>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Date of Birth (PE)</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>First_Name__c</fullName>
+        <description>As requested through CTASK0026172 - with approval from Matt Shaw.</description>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>First Name (PE)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Gender__c</fullName>
+        <description>As requested through CTASK0026172 - with approval from Matt Shaw.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Gender</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Name__c</fullName>
+        <description>As requested through CTASK0026172 - with approval from Matt Shaw.</description>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last Name (PE)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Post_Code__c</fullName>
+        <description>This *post code* field is created for capturing address for Awareness Kit data requirement</description>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Post Code (PE)</label>
+        <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purchased_Date__c</fullName>
+        <description>This field stores Purchased date entered on Register Product Page</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Purchased Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>State_Region__c</fullName>
+        <description>This *state region* field is created for capturing address for Awareness Kit data requirement. Possible value will be State or Region.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>State Region</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Street_Address__c</fullName>
+        <description>This *street address* field is created for capturing address for Awareness Kit data requirement</description>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Street Address (PE)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Suburb__c</fullName>
+        <description>As requested through CTASK0026172 - with approval from Matt Shaw.</description>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Suburb (PE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SuppliedEmail_SPE__c</fullName>
+        <description>Encrypted Web Email (PE) For patient</description>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Web Email (PE)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SuppliedPhone_SPE__c</fullName>
+        <description>Encrypted Web Phone(PE) For patient</description>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Web Phone (PE)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Title__c</fullName>
+        <description>As requested through CTASK0026172 - with approval from Matt Shaw.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Title</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Of_Ward__c</fullName>
+    <externalId>false</externalId>
+    <label>Type Of Ward</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Department</fullName>
+                <default>false</default>
+                <label>Department</label>
+            </value>
+            <value>
+                <fullName>ICU ED</fullName>
+                <default>false</default>
+                <label>ICU ED</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

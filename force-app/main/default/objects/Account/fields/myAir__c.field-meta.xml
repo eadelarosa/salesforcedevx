@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>myAir__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Registered on myAir or not</description>
+    <externalId>false</externalId>
+    <label>myAir</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

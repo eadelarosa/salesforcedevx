@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Emergency_Approvals__c</fullName>
+    <description>Number of emergency approvals for this customers</description>
+    <externalId>false</externalId>
+    <label>Number of Emergency Approvals</label>
+    <summaryFilterItems>
+        <field>Approval__c.Approval_Type__c</field>
+        <operation>equals</operation>
+        <value>Emergency</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Approval__c.Related_To_Member_Patient__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

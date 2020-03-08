@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subscription_End_Date__c</fullName>
+    <description>TASK0259500 - Requested by Sunny Jeyakumar.  Reason: We need a new  Yes/No field  called “Subscription Plan” in Salesforce - Account Object for External Record type only (Retail brands) to know whether a patient signed up any subscription plans or not. 
+This will field will be updated via Data Loader with the list of  subscription plan signed up customers provided by Martin.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Subscription End Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

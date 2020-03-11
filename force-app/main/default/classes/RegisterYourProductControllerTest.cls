@@ -367,7 +367,7 @@ public with sharing class RegisterYourProductControllerTest
         controller.email = 'testvalidation@resmed.com';
         controller.day = '31'; // Simulate Invalid Date
         controller.month = '11'; // Simulate Invalid Date
-        controller.year = '1984';
+        controller.year = '1000';
         controller.resmedMaskName = 'Pixi Paediatric';
         controller.maskPromotionalCode = '12533';
         controller.nonResmedMask = 'Non ResMed Mask';

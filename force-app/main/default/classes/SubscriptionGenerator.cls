@@ -7,7 +7,7 @@
  */
 public without sharing class SubscriptionGenerator {
 
-    private static final String CLASS_NAME = 'SubscriptionGenerator | ';
+    private static final String CLASS_NAME = 'SubscriptionGenerator.cls | ';
     private String locURL = NULL;
 
     /**
@@ -49,21 +49,26 @@ public without sharing class SubscriptionGenerator {
             return false;
         }
 
+        System.debug(CLASS_NAME + 'Subscription Map record successfully created | Value of Subscription_Map__c.GUID__c: ' + mapRec.GUID__c);
         return true;
 
     }
 
     private String getURL(String URLkey) {
 
+        System.debug(CLASS_NAME + 'Inside the SubscriptionGenerator.getURL | Value of URLKkey: ' + URLkey);
         Base_URL__mdt urlObj = NULL;
 
         try {
             urlObj = [SELECT Id, Base_URL__c FROM Base_URL__mdt WHERE MasterLabel = :URLkey LIMIT 1];
+            System.debug(CLASS_NAME + 'getURL() | After an attempt to retrieve the value of Base URL for Subscription Generator | Value of Base_URL__mdt.Base_URL__c: ' + urlObj.Base_URL__c);
         } catch (Exception e) {
             System.debug(CLASS_NAME + 'getURL() | Unable to validate URLKey | Error | ' + e.getMessage());
         }
 
+
         if (urlObj == NULL) { // something must have gone wrong when retrieving URLkey
+            System.debug(CLASS_NAME + 'getURL() | Base_URL__mdt is NULL.');
             return NULL;
         }
 

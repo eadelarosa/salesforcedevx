@@ -1575,8 +1575,8 @@ public without sharing class RegisterYourProductController {
      */
     private void createSubscriptionURL(String accountId) {
 
-        final String TYPEKEY = 'Register Your Product'; // this value should point to the name for the Register Your Product process
-        final String URLKEY = 'Subscription Processor'; // this value should point to the site.com URL 
+        final String TYPEKEY = Label.SubscriptionTypeRegisterYourProduct;  //'Register Your Product'; // this value should point to the name for the Register Your Product process
+        final String URLKEY = Label.SubscriptionProcessorKey; // 'Subscription Processor'; // this value should point to the site.com URL 
         String TYPE = NULL;
         String GUID = NULL;
         GUIDGenerator guidFactory = NULL;
@@ -1584,14 +1584,22 @@ public without sharing class RegisterYourProductController {
         try {
             TYPE = [SELECT Id, Type__c FROM Subscription_Type__mdt WHERE MasterLabel = :TYPEKEY LIMIT 1].Type__c;
         } catch (Exception e) {
-            System.debug('RegisterYourProductController | Error while retrieving TYPE value from Subscription_Type__mdt | Reason: ' + e.getMessage());
-            System.debug('RegisterYourProductController | No subscription record will be created.');
+            System.debug('RegisterYourProductController.cls | Error while retrieving TYPE value from Subscription_Type__mdt | Reason: ' + e.getMessage());
+            System.debug('RegisterYourProductController.cls | No subscription record will be created.');
         }
 
         if (TYPE != NULL) { // only proceed when the TYPE is found; otherwise, do nothing
 
+            System.debug('RegisterYourProductController | createSubscriptionURL() | Value of TYPE: ' + TYPE + ' | Value of accountId: ' + accountId);
             // Check if there is already a subscription entry for the same Account and Type
-            Subscription_Map__c rec = [SELECT Id FROM Subscription_Map__c WHERE Account__c = :accountId AND Type__c = :TYPE.trim() LIMIT 1];
+            Subscription_Map__c rec = NULL;
+            Case thisCase = NULL;
+
+            try {
+                rec = [SELECT Id FROM Subscription_Map__c WHERE Account__c = :accountId AND Type__c = :TYPE.trim() LIMIT 1];
+            } catch (Exception e) {
+                System.debug('RegisterYourProductController | This is fine. It only means that this registrant doesn\'t have an entry for this type of subscription yet. Good to proceed.');
+            }
 
             if (rec == NULL) { // If a record was not found, it means the account is not yet subscribed for this subscription; otherwise do nothing
                 guidFactory = new GUIDGenerator(NULL);
@@ -1599,11 +1607,23 @@ public without sharing class RegisterYourProductController {
     
                 SubscriptionGenerator subsGenerator = new SubscriptionGenerator();
                 if (subsGenerator.createSubscriptionURL(TYPE, accountId, GUID, URLKEY)) {
+
+                    // This is needed because the Email Template doesn't doesn't have a way to retrieve the Unsubscribe URL from the Subscription Map for merge field purposes
+                    try {
+                    rec = [SELECT Id, Unsubscribe_URL__c FROM Subscription_Map__c WHERE GUID__c = :GUID LIMIT 1]; // must return a record, otherewise something must have gone wrong createing the record above
+                    thisCase = [SELECT Id, Unsubscribe_URL__c FROM Case WHERE Id = :this.caseId LIMIT 1]; // must return a record - the current case
+                    thisCase.Unsubscribe_URL__c = rec.Unsubscribe_URL__c;
+                    Update thisCase;
                     System.debug('RegisterYourProductController | createSubscriptionURL() | Successfully created a subscription entry.');
+                    } catch (Exception e) {
+                        System.debug('RegisterYourProductController | Something went wrong when creating an entry into Subscription Map and updating the Case with Unsubscribe URL | Reason: ' + e.getMessage());
+                    }
                 } else {
                     System.debug('RegisterYourProductController | createSubscriptionURL() | Unsuccessful at creating subscription entry.');
                 }
             }
+        } else {
+            System.debug('RegisterYourProductController.cls | Couldn\'t retrieve the Subscription Type for Register Your Product process | Check if Custom Label - SubscriptionTypeRegisterYourProduct exists.');
         }
     }
 }
